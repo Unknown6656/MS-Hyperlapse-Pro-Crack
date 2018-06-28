@@ -1,0 +1,65 @@
+ File size            : 165888
+ PE header size       : 512 (496 used)    ( 0.31%)
+ PE additional info   : 1191              ( 0.72%)
+ Num.of PE sections   : 3
+ CLR header size     : 72                 ( 0.04%)
+ CLR meta-data size  : 77536              (46.74%)
+ CLR additional info : 48595              (29.29%)
+ CLR method headers  : 3371               ( 2.03%)
+ Managed code         : 32578             (19.64%)
+ Data                 : 1536              ( 0.93%)
+ Unaccounted          : 497               ( 0.30%)
+
+ Num.of PE sections   : 3
+   .text    - 163840
+   .rsrc    - 1024
+   .reloc   - 512
+
+ CLR meta-data size  : 77536
+   Module        -    1 (10 bytes)
+   TypeDef       -   78 (1092 bytes)    7 interfaces, 2 explicit layout
+   TypeRef       -  148 (888 bytes)
+   MethodDef     -  654 (9156 bytes)    29 abstract, 0 native, 619 bodies
+   FieldDef      -  384 (2304 bytes)    2 constant
+   MemberRef     -  351 (2106 bytes)
+   ParamDef      -  460 (2760 bytes)
+   MethodImpl    -   36 (216 bytes)
+   Constant      -   18 (108 bytes)
+   CustomAttribute-  472 (2832 bytes)
+   ClassLayout   -    2 (16 bytes)
+   StandAloneSig -   97 (194 bytes)
+   InterfaceImpl -   22 (88 bytes)
+   PropertyMap   -   32 (128 bytes)
+   Property      -  226 (1356 bytes)
+   MethodSemantic-  394 (2364 bytes)
+   TypeSpec      -   48 (96 bytes)
+   ModuleRef     -    1 (2 bytes)
+   Assembly      -    1 (22 bytes)
+   AssemblyRef   -    6 (120 bytes)
+   ManifestResource-   30 (360 bytes)
+   NestedClass   -   27 (108 bytes)
+   EventMap      -    3 (12 bytes)
+   Event         -    8 (48 bytes)
+   ImplMap       -    6 (48 bytes)
+   FieldRVA      -    2 (12 bytes)
+   GenericParam  -    1 (8 bytes)
+   MethodSpec    -  130 (520 bytes)
+   GenericParamConstraint-    1 (4 bytes)
+   Strings       - 26422 bytes
+   Blobs         -  7660 bytes
+   UserStrings   - 16208 bytes
+   Guids         -    16 bytes
+   Uncategorized -   252 bytes
+
+ CLR additional info : 48595
+   Resources         - 48595
+
+ CLR method headers : 3371
+   Num.of method bodies  - 619
+   Num.of fat headers    - 162
+   Num.of tiny headers   - 457
+   Num.of fat sections   - 13
+   Num.of small sections - 22
+
+ Managed code : 32578
+   Ave method size - 52

@@ -1,0 +1,36 @@
+#human readable description
+description Polaroid Cube
+cameraid 27
+
+#polynomial coefficients for the DIRECT mapping function (ocam_model.ss in MATLAB). These are used by cam2world
+
+poly_coeff_direct -1.145605e+03 0.000000e+00 3.688845e-04 -1.766257e-07 3.119979e-10 
+
+#polynomial coefficients for the inverse mapping function (ocam_model.invpol in MATLAB). These are used by world2cam
+
+poly_coeff_inverse  1289.309273 105.301347 -2873.972506 -12073.420399 -32404.363686 -55595.531457 -62872.182394 -46202.339083 -21081.697778 -5408.658317 -595.613581 
+
+#center: "row" and "column", starting from 0 (C convention)
+
+center 562.768480 964.902696
+
+#affine parameters "c", "d", "e"
+
+affine_params 0.999715 -0.000207 -0.000089
+
+#image size: "height" and "width"
+
+image_size 1080 1920
+
+# average pixel reprojection error
+
+error 0.408211
+ 
+# -------------------------
+#
+# Supported resolutions 
+#
+# Each line specifies one supported resolution. The format is width, height, scale-x, scale-y, bias-x, bias-y
+
+res 1920 1080         0.9999979445         0.9999353221        -0.0021804973         0.0273917405 Default
+res 1280 720         1.4999148351         1.5000703101         0.8017210261         0.5302561616 Default

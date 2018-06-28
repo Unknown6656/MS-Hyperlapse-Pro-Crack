@@ -1,0 +1,40 @@
+#human readable description
+description Sony FDR X1000V
+cameraid 18
+barefile Sony_FDR_1000v_bare_extended.txt
+
+#polynomial coefficients for the DIRECT mapping function (ocam_model.ss in MATLAB). These are used by cam2world
+
+poly_coeff_direct -9.283501e+02 0.000000e+00 3.962890e-04 6.149970e-08 -3.673857e-11 
+
+#polynomial coefficients for the inverse mapping function (ocam_model.invpol in MATLAB). These are used by world2cam
+
+poly_coeff_inverse 1512.017840 1339.930855 820.413886 837.633037 607.918975 345.354441 124.454431 19.196934 
+
+#center: "row" and "column", starting from 0 (C convention)
+
+center 544.392530 1006.561997
+
+#affine parameters "c", "d", "e"
+
+affine_params 1.000378 0.000056 0.000261
+
+#image size: "height" and "width"
+
+image_size 1080 1920
+
+# average pixel reprojection error
+
+error 0.619681
+ 
+# -------------------------
+#
+# Supported resolutions 
+#
+# Each line specifies one supported resolution. The format is width, height, scale-x, scale-y, bias-x, bias-y
+
+res 1280 720         1.4553964456         1.4590273716        28.0333914068        14.5503248532 HS120
+res 800 480         2.1811725869         2.1913990114        86.2577208657        17.7256684786 HS240
+res 1280 720         1.4997727315         1.5000956348         0.0995282911         0.1548233439 STD
+res 1920 1080         0.9999127150         1.0000218829         0.0736977044        -0.0161231763 HQ
+res 1920 1080         0.9999834998         0.9999006486         0.0211470101         0.0535898556 PS

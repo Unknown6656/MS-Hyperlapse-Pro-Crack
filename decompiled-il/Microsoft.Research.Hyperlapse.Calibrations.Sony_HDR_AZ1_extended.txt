@@ -1,0 +1,43 @@
+#human readable description
+description Sony HDR AZ1
+cameraid 12
+
+#polynomial coefficients for the DIRECT mapping function (ocam_model.ss in MATLAB). These are used by cam2world
+
+poly_coeff_direct -8.839200e+02 0.000000e+00 4.466875e-04 -1.626042e-08 8.236856e-11 
+
+#polynomial coefficients for the inverse mapping function (ocam_model.invpol in MATLAB). These are used by world2cam
+
+poly_coeff_inverse 1259.364320 732.251501 28.345833 41.963706 -82.477358 -96.051575 -36.980012 -5.197141 
+
+#center: "row" and "column", starting from 0 (C convention)
+
+center 553.763192 976.755761
+
+#affine parameters "c", "d", "e"
+
+affine_params 1.000373 0.000005 0.000007
+
+#image size: "height" and "width"
+
+image_size 1080 1920
+
+# average pixel reprojection error
+
+error 0.460532
+
+# -------------------------
+#
+# Supported resolutions 
+#
+# Each line specifies one supported resolution. The format is width, height, scale-x, scale-y, bias-x, bias-y
+
+res 1920 1080 1 1 0 0 50M_60p
+res 1920 1080 1 1 0 0 50M_30p
+res 1920 1080 1 1 0 0 50M_24p
+res 1920 1080 1 1 0 0 PS
+res 1920 1080 1 1 0 0 HQ
+res 1280 720 1.5013458001 1.5012900781 1.0127350283 -0.0884724595 HS120
+res 1280 720 1.5011085844 1.5015002657 1.1693689358 -0.1801163006 SSLOW
+res 1280 720 1.5 1.5 0 0 STD
+res 640 480 2.2506944847 2.2502441181 240.3478135204 0.6141319794 VGA

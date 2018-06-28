@@ -1,0 +1,51 @@
+#human readable description
+description GoPro HERO3 Black
+cameraid 5
+
+#polynomial coefficients for the DIRECT mapping function (ocam_model.ss in MATLAB). These are used by cam2world
+
+poly_coeff_direct -5.696284e+02 0.000000e+00 7.898814e-04 -6.211682e-07 3.598695e-10 
+
+#polynomial coefficients for the inverse mapping function (ocam_model.invpol in MATLAB). These are used by world2cam
+
+poly_coeff_inverse 1030.700277 791.278589 -240.868837 -847.871049 -869.242208 -467.883479 -140.368318 -18.924654 
+
+#center: "row" and "column", starting from 0 (C convention)
+
+center 470.232881 635.285583
+
+#affine parameters "c", "d", "e"
+
+affine_params 1.000000 0.000000 0.000000
+
+#image size: "height" and "width"
+
+image_size 960 1280
+
+# average pixel reprojection error
+
+error   0.655208
+
+# -------------------------
+#
+# Supported resolutions 
+#
+# Each line specifies one supported resolution. The format is width, height, scale-x, scale-y, bias-x, bias-y
+
+res 4096 2160 0.3204125949 0.3202359761 -14.8960508190 133.7707892746 Wide
+res 3840 2160 0.3207562878 0.3202634958 12.1427638665 134.1863890636 Wide
+res 2704 1536 0.4542114231 0.4501853871 12.6922553095 134.0339138954 Wide
+res 2704 1440 0.4854036453 0.4808742548 -15.9979540741 133.7757366792 Wide
+res 1920 1440 0.6685643880 0.6682538797 -1.0522654431 -0.5062914346 Wide
+
+res 1920 1080 0.6534823091 0.6409812845 12.3659165897 134.1902301066 Wide
+res 1920 1080 0.5016543616 0.5019183543 159.5008015060 209.2077426226 Medium
+res 1920 1080 0.3331628465 0.3319441823 319.9193486115 298.9607453121 Narrow
+
+res 1280 960 1 1 0 0 Wide
+
+res 1280 720 0.9614637046 0.9254308755 10.8330078030 133.8384162420 Wide
+res 1280 720 0.7478118804 0.7475123365 160.0295035096 211.4120430557 Medium
+res 1280 720 0.5008118440 0.5028075949 319.6224443621 299.5801946356 Narrow
+
+res 848 480 1.4699448246 1.4583707086 14.0293127841 129.1866743466 Wide

@@ -1,0 +1,1592 @@
+﻿___[MOD] L:\Projects.VisualStudio\MS Hyperlapse Crack\input\Microsoft.Research.Hyperlapse.dll
+   |      M A N I F E S T
+   |___[NSP] Microsoft.Research.Hyperlapse
+   |   |___[CLS] Microsoft.Research.Hyperlapse.AboutViewModel
+   |   |   |     .class public auto ansi beforefieldinit 
+   |   |   |      extends [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.ViewModel 
+   |   |   |___[FLD] <GoToPageCommand>k__BackingField : private class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command`1<string>
+   |   |   |___[FLD] activationManager : private class Microsoft.Research.Hyperlapse.ActivationManager
+   |   |   |___[FLD] productInfo : private class Microsoft.Research.Hyperlapse.ProductInfo
+   |   |   |___[MET] .ctor : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.INavigation,class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.IUserInterface,class Microsoft.Research.Hyperlapse.ActivationManager,class Microsoft.Research.Hyperlapse.ProductInfo)
+   |   |   |     <.ctor>b__0 : void(string)
+   |   |   |___[MET] GoToPage : void(string)
+   |   |   |___[MET] get_ActivationStatusString : string()
+   |   |   |___[MET] get_ApplicationName : string()
+   |   |   |     get_GoToPageCommand : class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command`1<string>()
+   |   |   |___[MET] get_Title : string()
+   |   |   |___[MET] get_VersionString : string()
+   |   |   |     set_GoToPageCommand : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command`1<string>)
+   |   |   |___[PTY] ActivationStatusString : instance string()
+   |   |   |___[PTY] ApplicationName : instance string()
+   |   |   |___[PTY] GoToPageCommand : instance class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command`1<string>()
+   |   |   |___[PTY] Title : instance string()
+   |   |   |___[PTY] VersionString : instance string()
+   |   |
+   |   |___[CLS] Microsoft.Research.Hyperlapse.AccelerationOptions
+   |   |   |     .class public auto ansi beforefieldinit 
+   |   |   |___[FLD] ForceSoftwareRenderingKey : private initonly string
+   |   |   |___[FLD] UseGeometryShadersKey : private initonly string
+   |   |   |___[FLD] UseHardwareVideoEncoderKey : private initonly string
+   |   |   |___[FLD] settings : private class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.ISettingsStore
+   |   |   |___[MET] .ctor : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.ISettingsStore)
+   |   |   |___[MET] get_ForceSoftwareRendering : bool()
+   |   |   |___[MET] get_UseGeometryShaders : bool()
+   |   |   |___[MET] get_UseHardwareVideoEncoder : bool()
+   |   |   |___[MET] set_ForceSoftwareRendering : void(bool)
+   |   |   |___[MET] set_UseGeometryShaders : void(bool)
+   |   |   |___[MET] set_UseHardwareVideoEncoder : void(bool)
+   |   |   |___[PTY] ForceSoftwareRendering : instance bool()
+   |   |   |___[PTY] UseGeometryShaders : instance bool()
+   |   |   |___[PTY] UseHardwareVideoEncoder : instance bool()
+   |   |
+   |   |___[CLS] Microsoft.Research.Hyperlapse.ActivationManager
+   |   |   |     .class public auto ansi beforefieldinit 
+   |   |   |      implements [mscorlib]System.IDisposable 
+   |   |   |___[STF] DllName : private static literal string
+   |   |   |___[FLD] disposed : private bool
+   |   |   |___[FLD] firstRunExperience : private class Microsoft.Research.Hyperlapse.FirstRunExperience
+   |   |   |___[FLD] instanceId : private int32
+   |   |   |___[FLD] productInfo : private class Microsoft.Research.Hyperlapse.ProductInfo
+   |   |   |___[MET] .ctor : void(class Microsoft.Research.Hyperlapse.FirstRunExperience,class Microsoft.Research.Hyperlapse.ProductInfo)
+   |   |   |___[MET] Activate : bool(string)
+   |   |   |___[MET] Dispose : void()
+   |   |   |___[MET] GetActivationInfo : bool(string&,string&,string&)
+   |   |   |___[MET] GetActivationStatus : bool()
+   |   |   |___[MET] GetProductId : string()
+   |   |   |___[MET] GetProductKey : string()
+   |   |   |___[MET] GetValidationError : int32()
+   |   |   |___[STM] ProductKeyValidator_Activate : bool(int32,string,int32&)
+   |   |   |___[STM] ProductKeyValidator_GetActivationStatus : bool(int32,class [mscorlib]System.Text.StringBuilder,class [mscorlib]System.Text.StringBuilder,class [mscorlib]System.Text.StringBuilder)
+   |   |   |___[STM] ProductKeyValidator_Initialize : void(int32,string,string)
+   |   |   |___[STM] ProductKeyValidator_ValidateKey : bool(int32,string,int32&)
+   |   |   |___[STM] ProductKeyValidator_instance_delete : void(int32)
+   |   |   |___[STM] ProductKeyValidator_instance_new : int32()
+   |   |   |___[MET] ValidateKey : bool(string)
+   |   |
+   |   |___[CLS] Microsoft.Research.Hyperlapse.Calibration
+   |   |   |     .class public abstract auto ansi beforefieldinit 
+   |   |   |___[FLD] <Description>k__BackingField : private string
+   |   |   |___[FLD] <HousingOn>k__BackingField : private bool
+   |   |   |___[FLD] <ID>k__BackingField : private int32
+   |   |   |___[FLD] <VideoModes>k__BackingField : private class [mscorlib]System.Collections.Generic.List`1<string>
+   |   |   |___[STF] ResourcePrefix : public static initonly string
+   |   |   |___[FLD] bareLocation : private string
+   |   |   |___[FLD] location : private string
+   |   |   |___[STM] .cctor : void()
+   |   |   |     .ctor : void(int32,string,class [mscorlib]System.Collections.Generic.List`1<string>,string,string)
+   |   |   |___[MET] ExtractToFolder : string(string)
+   |   |   |___[MET] get_Description : string()
+   |   |   |___[MET] get_HousingOn : bool()
+   |   |   |___[MET] get_ID : int32()
+   |   |   |___[MET] get_Location : string()
+   |   |   |___[MET] get_SupportsHousing : bool()
+   |   |   |     get_VideoModes : class [mscorlib]System.Collections.Generic.List`1<string>()
+   |   |   |___[MET] set_Description : void(string)
+   |   |   |___[MET] set_HousingOn : void(bool)
+   |   |   |___[MET] set_ID : void(int32)
+   |   |   |     set_VideoModes : void(class [mscorlib]System.Collections.Generic.List`1<string>)
+   |   |   |___[PTY] Description : instance string()
+   |   |   |___[PTY] HousingOn : instance bool()
+   |   |   |___[PTY] ID : instance int32()
+   |   |   |___[PTY] Location : instance string()
+   |   |   |___[PTY] SupportsHousing : instance bool()
+   |   |   |___[PTY] VideoModes : instance class [mscorlib]System.Collections.Generic.List`1<string>()
+   |   |
+   |   |___[CLS] Microsoft.Research.Hyperlapse.CalibrationInfo
+   |   |   |     .class public auto ansi beforefieldinit 
+   |   |   |___[FLD] <VideoMode>k__BackingField : private string
+   |   |   |___[FLD] <WasAutoSelected>k__BackingField : private bool
+   |   |   |___[FLD] calibration : private class Microsoft.Research.Hyperlapse.Calibration
+   |   |   |___[MET] .ctor : void()
+   |   |   |___[MET] get_Calibration : class Microsoft.Research.Hyperlapse.Calibration()
+   |   |   |___[MET] get_VideoMode : string()
+   |   |   |___[MET] get_WasAutoSelected : bool()
+   |   |   |___[MET] set_Calibration : void(class Microsoft.Research.Hyperlapse.Calibration)
+   |   |   |___[MET] set_VideoMode : void(string)
+   |   |   |___[MET] set_WasAutoSelected : void(bool)
+   |   |   |___[PTY] Calibration : instance class Microsoft.Research.Hyperlapse.Calibration()
+   |   |   |___[PTY] VideoMode : instance string()
+   |   |   |___[PTY] WasAutoSelected : instance bool()
+   |   |
+   |   |___[CLS] Microsoft.Research.Hyperlapse.CalibrationMatcher
+   |   |   |     .class public auto ansi beforefieldinit 
+   |   |   |___[CLS] <>c__DisplayClass7
+   |   |   |   |     .class nested private auto ansi sealed beforefieldinit 
+   |   |   |   |     .custom instance void [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() = ( 01 00 00 00 )  ...
+   |   |   |   |___[FLD] videoInfo : public class Microsoft.Research.Hyperlapse.VideoInfo
+   |   |   |   |___[MET] .ctor : void()
+   |   |   |   |     <FindCalibrationInfoForVideo>b__1 : bool(class Microsoft.Research.Hyperlapse.Calibration)
+   |   |   |   |     <FindCalibrationInfoForVideo>b__2 : bool(string)
+   |   |   |
+   |   |   |___[STF] CS$<>9__CachedAnonymousMethodDelegate6 : private static class [mscorlib]System.Func`2<class Microsoft.Research.Hyperlapse.Calibration,bool>
+   |   |   |___[FLD] calibrationProvider : private class Microsoft.Research.Hyperlapse.CalibrationProvider
+   |   |   |___[MET] .ctor : void(class Microsoft.Research.Hyperlapse.CalibrationProvider)
+   |   |   |     <FindCalibrationInfoForVideo>b__3 : bool(class Microsoft.Research.Hyperlapse.Calibration)
+   |   |   |___[MET] FindCalibrationInfoForVideo : class Microsoft.Research.Hyperlapse.CalibrationInfo(class Microsoft.Research.Hyperlapse.VideoInfo)
+   |   |
+   |   |___[CLS] Microsoft.Research.Hyperlapse.CalibrationProvider
+   |   |   |     .class public auto ansi beforefieldinit 
+   |   |   |___[STF] CS$<>9__CachedAnonymousMethodDelegate1 : private static class [mscorlib]System.Func`2<class Microsoft.Research.Hyperlapse.Calibration,string>
+   |   |   |___[FLD] CalibrationFileDirectory : public initonly string
+   |   |   |___[STF] calibrationFiles : private static class [mscorlib]System.Collections.Generic.List`1<class Microsoft.Research.Hyperlapse.Calibration>
+   |   |   |___[MET] .ctor : void()
+   |   |   |     <PopulateCalibrationFiles>b__0 : string(class Microsoft.Research.Hyperlapse.Calibration)
+   |   |   |     GetCalibrations : class [mscorlib]System.Collections.Generic.List`1<class Microsoft.Research.Hyperlapse.Calibration>()
+   |   |   |___[MET] GetCalibrationsFromFiles : void()
+   |   |   |___[MET] GetCalibrationsFromResources : void()
+   |   |   |___[MET] PopulateCalibrationFiles : void()
+   |   |   |     TryAddCalibrationFile : void <(Microsoft.Research.Hyperlapse.Calibration) T>(class [mscorlib]System.IO.StreamReader,string)
+   |   |
+   |   |___[CLS] Microsoft.Research.Hyperlapse.FileCalibration
+   |   |   |     .class public auto ansi beforefieldinit 
+   |   |   |      extends Microsoft.Research.Hyperlapse.Calibration 
+   |   |   |     .ctor : void(int32,string,class [mscorlib]System.Collections.Generic.List`1<string>,string,string)
+   |   |   |___[MET] ExtractToFolder : string(string)
+   |   |
+   |   |___[CLS] Microsoft.Research.Hyperlapse.FinishViewModel
+   |   |   |     .class public auto ansi beforefieldinit 
+   |   |   |      extends [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.ViewModel 
+   |   |   |___[VCL] <GoBackToHome>d__3
+   |   |   |   |     .class value nested private auto ansi sealed beforefieldinit 
+   |   |   |   |      extends [mscorlib]System.ValueType 
+   |   |   |   |      implements [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine 
+   |   |   |   |     .custom instance void [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() = ( 01 00 00 00 )  ...
+   |   |   |   |___[FLD] <>1__state : public int32
+   |   |   |   |___[FLD] <>4__this : public class Microsoft.Research.Hyperlapse.FinishViewModel
+   |   |   |   |___[FLD] <>t__builder : public valuetype [mscorlib]System.Runtime.CompilerServices.AsyncVoidMethodBuilder
+   |   |   |   |___[FLD] <>t__stack : private object
+   |   |   |   |___[FLD] <>u__$awaiter4 : private valuetype [mscorlib]System.Runtime.CompilerServices.TaskAwaiter`1<bool>
+   |   |   |   |___[MET] MoveNext : void()
+   |   |   |   |___[MET] SetStateMachine : void(class [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine)
+   |   |   |
+   |   |   |___[FLD] <GoBackToHomeCommand>k__BackingField : private class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command
+   |   |   |___[FLD] <GoBackToSettingsCommand>k__BackingField : private class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command
+   |   |   |___[FLD] <NavigationViewModel>k__BackingField : private class Microsoft.Research.Hyperlapse.NavigationViewModel
+   |   |   |___[FLD] <OpenVideoLocationCommand>k__BackingField : private class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command
+   |   |   |___[FLD] <VideoLength>k__BackingField : private valuetype [mscorlib]System.TimeSpan
+   |   |   |___[STF] CS$<>9__CachedAnonymousMethodDelegate1 : private static class [mscorlib]System.Func`1<bool>
+   |   |   |___[FLD] operationsViewModel : private class Microsoft.Research.Hyperlapse.WindowOperationsViewModel
+   |   |   |___[FLD] project : private class Microsoft.Research.Hyperlapse.Project
+   |   |   |___[FLD] videoReader : private class Microsoft.Research.Hyperlapse.IVideoReader
+   |   |   |___[MET] .ctor : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.INavigation,class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.IUserInterface,class Microsoft.Research.Hyperlapse.WindowOperationsViewModel,class Microsoft.Research.Hyperlapse.IVideoReader)
+   |   |   |     <OnNavigatedTo>b__0 : bool()
+   |   |   |___[MET] GetVideoLength : valuetype [mscorlib]System.TimeSpan()
+   |   |   |___[MET] GoBackToHome : void()
+   |   |   |___[MET] GoBackToSettings : void()
+   |   |   |___[MET] OnNavigatedTo : void(object[])
+   |   |   |___[MET] OpenExplorerToVideoFile : void()
+   |   |   |___[MET] get_GoBackToHomeCommand : class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command()
+   |   |   |___[MET] get_GoBackToSettingsCommand : class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command()
+   |   |   |___[MET] get_NavigationViewModel : class Microsoft.Research.Hyperlapse.NavigationViewModel()
+   |   |   |___[MET] get_OpenVideoLocationCommand : class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command()
+   |   |   |___[MET] get_OutputDirectory : class [System]System.Uri()
+   |   |   |___[MET] get_OutputFramesPerSecond : class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Rational()
+   |   |   |___[MET] get_VideoLength : valuetype [mscorlib]System.TimeSpan()
+   |   |   |___[MET] get_VideoSource : class [System]System.Uri()
+   |   |   |___[MET] set_GoBackToHomeCommand : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command)
+   |   |   |___[MET] set_GoBackToSettingsCommand : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command)
+   |   |   |___[MET] set_NavigationViewModel : void(class Microsoft.Research.Hyperlapse.NavigationViewModel)
+   |   |   |___[MET] set_OpenVideoLocationCommand : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command)
+   |   |   |___[MET] set_VideoLength : void(valuetype [mscorlib]System.TimeSpan)
+   |   |   |___[PTY] GoBackToHomeCommand : instance class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command()
+   |   |   |___[PTY] GoBackToSettingsCommand : instance class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command()
+   |   |   |___[PTY] NavigationViewModel : instance class Microsoft.Research.Hyperlapse.NavigationViewModel()
+   |   |   |___[PTY] OpenVideoLocationCommand : instance class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command()
+   |   |   |___[PTY] OutputDirectory : instance class [System]System.Uri()
+   |   |   |___[PTY] OutputFramesPerSecond : instance class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Rational()
+   |   |   |___[PTY] VideoLength : instance valuetype [mscorlib]System.TimeSpan()
+   |   |   |___[PTY] VideoSource : instance class [System]System.Uri()
+   |   |
+   |   |___[CLS] Microsoft.Research.Hyperlapse.FirstRunExperience
+   |   |   |     .class public auto ansi beforefieldinit 
+   |   |   |___[FLD] <IsFirstRun>k__BackingField : private bool
+   |   |   |___[FLD] settingsStore : private class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.IUpgradeableSettingsStore
+   |   |   |___[MET] .ctor : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.IUpgradeableSettingsStore)
+   |   |   |___[MET] SetFirstRunTime : void()
+   |   |   |___[MET] SetInstallationId : void()
+   |   |   |___[MET] UpgradeIfNeeded : void()
+   |   |   |___[MET] get_FirstRunTime : valuetype [mscorlib]System.DateTime()
+   |   |   |___[MET] get_InstallationId : string()
+   |   |   |___[MET] get_IsFirstRun : bool()
+   |   |   |___[MET] get_VideosProcessed : int32()
+   |   |   |___[MET] set_FirstRunTime : void(valuetype [mscorlib]System.DateTime)
+   |   |   |___[MET] set_InstallationId : void(string)
+   |   |   |___[MET] set_IsFirstRun : void(bool)
+   |   |   |___[MET] set_VideosProcessed : void(int32)
+   |   |   |___[PTY] FirstRunTime : instance valuetype [mscorlib]System.DateTime()
+   |   |   |___[PTY] InstallationId : instance string()
+   |   |   |___[PTY] IsFirstRun : instance bool()
+   |   |   |___[PTY] VideosProcessed : instance int32()
+   |   |
+   |   |___[CLS] Microsoft.Research.Hyperlapse.FrameRateComparer
+   |   |   |     .class private auto ansi beforefieldinit 
+   |   |   |      implements class [mscorlib]System.Collections.Generic.IComparer`1<class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Rational> 
+   |   |   |___[MET] .ctor : void()
+   |   |   |___[MET] Compare : int32(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Rational,class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Rational)
+   |   |
+   |   |___[ENU] Microsoft.Research.Hyperlapse.HyperlapseDialogResult
+   |   |   |     .class enum public auto ansi sealed 
+   |   |   |      extends [mscorlib]System.Enum 
+   |   |   |___[STF] BusyShown : public static literal valuetype Microsoft.Research.Hyperlapse.HyperlapseDialogResult
+   |   |   |___[STF] Button1 : public static literal valuetype Microsoft.Research.Hyperlapse.HyperlapseDialogResult
+   |   |   |___[STF] Button2 : public static literal valuetype Microsoft.Research.Hyperlapse.HyperlapseDialogResult
+   |   |   |___[STF] Button3 : public static literal valuetype Microsoft.Research.Hyperlapse.HyperlapseDialogResult
+   |   |   |___[STF] Canceled : public static literal valuetype Microsoft.Research.Hyperlapse.HyperlapseDialogResult
+   |   |   |___[FLD] value__ : public specialname rtspecialname int32
+   |   |
+   |   |___[CLS] Microsoft.Research.Hyperlapse.HyperlapseEngine
+   |   |   |     .class public auto ansi beforefieldinit 
+   |   |   |___[CLS] <>c__DisplayClass4
+   |   |   |   |     .class nested private auto ansi sealed beforefieldinit 
+   |   |   |   |     .custom instance void [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() = ( 01 00 00 00 )  ...
+   |   |   |   |___[FLD] <>4__this : public class Microsoft.Research.Hyperlapse.HyperlapseEngine
+   |   |   |   |___[FLD] param : public class Microsoft.Research.Hyperlapse.HyperlapseParameters
+   |   |   |   |___[FLD] success : public bool
+   |   |   |   |___[MET] .ctor : void()
+   |   |   |   |     <RunHyperlapse>b__3 : void()
+   |   |   |
+   |   |   |___[VCL] <Cancel>d__0
+   |   |   |   |     .class value nested private auto ansi sealed beforefieldinit 
+   |   |   |   |      extends [mscorlib]System.ValueType 
+   |   |   |   |      implements [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine 
+   |   |   |   |     .custom instance void [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() = ( 01 00 00 00 )  ...
+   |   |   |   |___[FLD] <>1__state : public int32
+   |   |   |   |___[FLD] <>4__this : public class Microsoft.Research.Hyperlapse.HyperlapseEngine
+   |   |   |   |___[FLD] <>t__builder : public valuetype [mscorlib]System.Runtime.CompilerServices.AsyncTaskMethodBuilder
+   |   |   |   |___[FLD] <>t__stack : private object
+   |   |   |   |___[FLD] <>u__$awaiter1 : private valuetype [mscorlib]System.Runtime.CompilerServices.TaskAwaiter
+   |   |   |   |___[MET] MoveNext : void()
+   |   |   |   |___[MET] SetStateMachine : void(class [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine)
+   |   |   |
+   |   |   |___[VCL] <RunHyperlapse>d__6
+   |   |   |   |     .class value nested private auto ansi sealed beforefieldinit 
+   |   |   |   |      extends [mscorlib]System.ValueType 
+   |   |   |   |      implements [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine 
+   |   |   |   |     .custom instance void [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() = ( 01 00 00 00 )  ...
+   |   |   |   |___[FLD] <>1__state : public int32
+   |   |   |   |___[FLD] <>4__this : public class Microsoft.Research.Hyperlapse.HyperlapseEngine
+   |   |   |   |___[FLD] <>t__builder : public valuetype [mscorlib]System.Runtime.CompilerServices.AsyncTaskMethodBuilder
+   |   |   |   |___[FLD] <>t__stack : private object
+   |   |   |   |___[FLD] <>u__$awaiter8 : private valuetype [mscorlib]System.Runtime.CompilerServices.TaskAwaiter
+   |   |   |   |___[FLD] <startTime>5__7 : public valuetype [mscorlib]System.DateTime
+   |   |   |   |___[FLD] CS$<>8__locals5 : public class Microsoft.Research.Hyperlapse.HyperlapseEngine/'<>c__DisplayClass4'
+   |   |   |   |___[FLD] param : public class Microsoft.Research.Hyperlapse.HyperlapseParameters
+   |   |   |   |___[MET] MoveNext : void()
+   |   |   |   |___[MET] SetStateMachine : void(class [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine)
+   |   |   |
+   |   |   |___[FLD] <IsRunning>k__BackingField : private bool
+   |   |   |___[FLD] ActivationStatusChanged : private class [mscorlib]System.EventHandler
+   |   |   |___[FLD] ProcessingCancelled : private class [mscorlib]System.EventHandler
+   |   |   |___[FLD] ProcessingFailed : private class [mscorlib]System.EventHandler`1<class Microsoft.Research.Hyperlapse.ProcessingFailedEventArgs>
+   |   |   |___[FLD] ProcessingFinished : private class [mscorlib]System.EventHandler`1<class Microsoft.Research.Hyperlapse.ProcessingFinishedEventArgs>
+   |   |   |___[FLD] ProgressChanged : private class [mscorlib]System.EventHandler
+   |   |   |___[FLD] cancelRequested : private bool
+   |   |   |___[FLD] hyperlapseTask : private class [mscorlib]System.Threading.Tasks.Task
+   |   |   |___[FLD] nativeEngine : private class Microsoft.Research.Hyperlapse.INativeHyperlapseEngine
+   |   |   |___[MET] .ctor : void(class Microsoft.Research.Hyperlapse.INativeHyperlapseEngine,class Microsoft.Research.Hyperlapse.ProductInfo)
+   |   |   |___[MET] Cancel : class [mscorlib]System.Threading.Tasks.Task()
+   |   |   |___[MET] Dispose : void()
+   |   |   |___[MET] RunHyperlapse : class [mscorlib]System.Threading.Tasks.Task(class Microsoft.Research.Hyperlapse.HyperlapseParameters)
+   |   |   |___[MET] Start : void(class Microsoft.Research.Hyperlapse.HyperlapseParameters)
+   |   |   |___[MET] add_ActivationStatusChanged : void(class [mscorlib]System.EventHandler)
+   |   |   |___[MET] add_ProcessingCancelled : void(class [mscorlib]System.EventHandler)
+   |   |   |     add_ProcessingFailed : void(class [mscorlib]System.EventHandler`1<class Microsoft.Research.Hyperlapse.ProcessingFailedEventArgs>)
+   |   |   |     add_ProcessingFinished : void(class [mscorlib]System.EventHandler`1<class Microsoft.Research.Hyperlapse.ProcessingFinishedEventArgs>)
+   |   |   |___[MET] add_ProgressChanged : void(class [mscorlib]System.EventHandler)
+   |   |   |___[MET] engine_ActivationStatusChanged : void(object,class [mscorlib]System.EventArgs)
+   |   |   |___[MET] engine_ProgressChanged : void(object,class [mscorlib]System.EventArgs)
+   |   |   |___[MET] get_IsRunning : bool()
+   |   |   |___[MET] get_ProductIsActivated : bool()
+   |   |   |___[MET] get_Status : string()
+   |   |   |___[MET] get_TotalProgess : float32()
+   |   |   |___[MET] remove_ActivationStatusChanged : void(class [mscorlib]System.EventHandler)
+   |   |   |___[MET] remove_ProcessingCancelled : void(class [mscorlib]System.EventHandler)
+   |   |   |     remove_ProcessingFailed : void(class [mscorlib]System.EventHandler`1<class Microsoft.Research.Hyperlapse.ProcessingFailedEventArgs>)
+   |   |   |     remove_ProcessingFinished : void(class [mscorlib]System.EventHandler`1<class Microsoft.Research.Hyperlapse.ProcessingFinishedEventArgs>)
+   |   |   |___[MET] remove_ProgressChanged : void(class [mscorlib]System.EventHandler)
+   |   |   |___[MET] set_IsRunning : void(bool)
+   |   |   |___[EVT] ActivationStatusChanged : [mscorlib]System.EventHandler
+   |   |   |___[EVT] ProcessingCancelled : [mscorlib]System.EventHandler
+   |   |   |___[EVT] ProcessingFailed : class [mscorlib]System.EventHandler`1<class Microsoft.Research.Hyperlapse.ProcessingFailedEventArgs>
+   |   |   |___[EVT] ProcessingFinished : class [mscorlib]System.EventHandler`1<class Microsoft.Research.Hyperlapse.ProcessingFinishedEventArgs>
+   |   |   |___[EVT] ProgressChanged : [mscorlib]System.EventHandler
+   |   |   |___[PTY] IsRunning : instance bool()
+   |   |   |___[PTY] ProductIsActivated : instance bool()
+   |   |   |___[PTY] Status : instance string()
+   |   |   |___[PTY] TotalProgess : instance float32()
+   |   |
+   |   |___[CLS] Microsoft.Research.Hyperlapse.HyperlapseParameters
+   |   |   |     .class public auto ansi beforefieldinit 
+   |   |   |___[FLD] <CalibrationFile>k__BackingField : private class Microsoft.Research.Hyperlapse.Calibration
+   |   |   |___[FLD] <CameraModel>k__BackingField : private int32
+   |   |   |___[FLD] <CreditLength>k__BackingField : private float32
+   |   |   |___[FLD] <EndFrame>k__BackingField : private int32
+   |   |   |___[FLD] <ForceSoftwareRendering>k__BackingField : private bool
+   |   |   |___[FLD] <FrameRate>k__BackingField : private class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Rational
+   |   |   |___[FLD] <FramesPerSecond>k__BackingField : private float64
+   |   |   |___[FLD] <InputHeight>k__BackingField : private int32
+   |   |   |___[FLD] <InputWidth>k__BackingField : private int32
+   |   |   |___[FLD] <OutputBitrate>k__BackingField : private int32
+   |   |   |___[FLD] <OutputHeight>k__BackingField : private int32
+   |   |   |___[FLD] <OutputRotation>k__BackingField : private int32
+   |   |   |___[FLD] <OutputWidth>k__BackingField : private int32
+   |   |   |___[FLD] <RenderTarget>k__BackingField : private int32
+   |   |   |___[FLD] <SpeedupFactor>k__BackingField : private int32
+   |   |   |___[FLD] <StartFrame>k__BackingField : private int32
+   |   |   |___[FLD] <TempOutputDirectory>k__BackingField : private string
+   |   |   |___[FLD] <UseAdvancedSmoothing>k__BackingField : private bool
+   |   |   |___[FLD] <UseGeometryShaders>k__BackingField : private bool
+   |   |   |___[FLD] <UseHardwareVideoEncoder>k__BackingField : private bool
+   |   |   |___[FLD] <VideoLength>k__BackingField : private valuetype [mscorlib]System.TimeSpan
+   |   |   |___[FLD] <VideoMode>k__BackingField : private string
+   |   |   |___[FLD] <VideoOutputFilePath>k__BackingField : private string
+   |   |   |___[FLD] <VideoUri>k__BackingField : private class [System]System.Uri
+   |   |   |___[MET] .ctor : void()
+   |   |   |___[MET] get_CalibrationFile : class Microsoft.Research.Hyperlapse.Calibration()
+   |   |   |___[MET] get_CameraModel : int32()
+   |   |   |___[MET] get_CreditLength : float32()
+   |   |   |___[MET] get_EndFrame : int32()
+   |   |   |___[MET] get_ForceSoftwareRendering : bool()
+   |   |   |___[MET] get_FrameRate : class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Rational()
+   |   |   |___[MET] get_FramesPerSecond : float64()
+   |   |   |___[MET] get_InputHeight : int32()
+   |   |   |___[MET] get_InputWidth : int32()
+   |   |   |___[MET] get_OutputBitrate : int32()
+   |   |   |___[MET] get_OutputHeight : int32()
+   |   |   |___[MET] get_OutputRotation : int32()
+   |   |   |___[MET] get_OutputWidth : int32()
+   |   |   |___[MET] get_RenderTarget : int32()
+   |   |   |___[MET] get_SpeedupFactor : int32()
+   |   |   |___[MET] get_StartFrame : int32()
+   |   |   |___[MET] get_TempOutputDirectory : string()
+   |   |   |___[MET] get_UseAdvancedSmoothing : bool()
+   |   |   |___[MET] get_UseGeometryShaders : bool()
+   |   |   |___[MET] get_UseHardwareVideoEncoder : bool()
+   |   |   |___[MET] get_VideoLength : valuetype [mscorlib]System.TimeSpan()
+   |   |   |___[MET] get_VideoMode : string()
+   |   |   |___[MET] get_VideoOutputFilePath : string()
+   |   |   |___[MET] get_VideoUri : class [System]System.Uri()
+   |   |   |___[MET] set_CalibrationFile : void(class Microsoft.Research.Hyperlapse.Calibration)
+   |   |   |___[MET] set_CameraModel : void(int32)
+   |   |   |___[MET] set_CreditLength : void(float32)
+   |   |   |___[MET] set_EndFrame : void(int32)
+   |   |   |___[MET] set_ForceSoftwareRendering : void(bool)
+   |   |   |___[MET] set_FrameRate : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Rational)
+   |   |   |___[MET] set_FramesPerSecond : void(float64)
+   |   |   |___[MET] set_InputHeight : void(int32)
+   |   |   |___[MET] set_InputWidth : void(int32)
+   |   |   |___[MET] set_OutputBitrate : void(int32)
+   |   |   |___[MET] set_OutputHeight : void(int32)
+   |   |   |___[MET] set_OutputRotation : void(int32)
+   |   |   |___[MET] set_OutputWidth : void(int32)
+   |   |   |___[MET] set_RenderTarget : void(int32)
+   |   |   |___[MET] set_SpeedupFactor : void(int32)
+   |   |   |___[MET] set_StartFrame : void(int32)
+   |   |   |___[MET] set_TempOutputDirectory : void(string)
+   |   |   |___[MET] set_UseAdvancedSmoothing : void(bool)
+   |   |   |___[MET] set_UseGeometryShaders : void(bool)
+   |   |   |___[MET] set_UseHardwareVideoEncoder : void(bool)
+   |   |   |___[MET] set_VideoLength : void(valuetype [mscorlib]System.TimeSpan)
+   |   |   |___[MET] set_VideoMode : void(string)
+   |   |   |___[MET] set_VideoOutputFilePath : void(string)
+   |   |   |___[MET] set_VideoUri : void(class [System]System.Uri)
+   |   |   |___[PTY] CalibrationFile : instance class Microsoft.Research.Hyperlapse.Calibration()
+   |   |   |___[PTY] CameraModel : instance int32()
+   |   |   |___[PTY] CreditLength : instance float32()
+   |   |   |___[PTY] EndFrame : instance int32()
+   |   |   |___[PTY] ForceSoftwareRendering : instance bool()
+   |   |   |___[PTY] FrameRate : instance class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Rational()
+   |   |   |___[PTY] FramesPerSecond : instance float64()
+   |   |   |___[PTY] InputHeight : instance int32()
+   |   |   |___[PTY] InputWidth : instance int32()
+   |   |   |___[PTY] OutputBitrate : instance int32()
+   |   |   |___[PTY] OutputHeight : instance int32()
+   |   |   |___[PTY] OutputRotation : instance int32()
+   |   |   |___[PTY] OutputWidth : instance int32()
+   |   |   |___[PTY] RenderTarget : instance int32()
+   |   |   |___[PTY] SpeedupFactor : instance int32()
+   |   |   |___[PTY] StartFrame : instance int32()
+   |   |   |___[PTY] TempOutputDirectory : instance string()
+   |   |   |___[PTY] UseAdvancedSmoothing : instance bool()
+   |   |   |___[PTY] UseGeometryShaders : instance bool()
+   |   |   |___[PTY] UseHardwareVideoEncoder : instance bool()
+   |   |   |___[PTY] VideoLength : instance valuetype [mscorlib]System.TimeSpan()
+   |   |   |___[PTY] VideoMode : instance string()
+   |   |   |___[PTY] VideoOutputFilePath : instance string()
+   |   |   |___[PTY] VideoUri : instance class [System]System.Uri()
+   |   |
+   |   |___[CLS] Microsoft.Research.Hyperlapse.HyperlapseTelemetryClient
+   |   |   |     .class public auto ansi beforefieldinit 
+   |   |   |      implements [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.ITelemetryClient 
+   |   |   |___[FLD] client : private class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.ITelemetryClient
+   |   |   |___[FLD] productInfo : private class Microsoft.Research.Hyperlapse.ProductInfo
+   |   |   |___[MET] .ctor : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.ITelemetryClient,class Microsoft.Research.Hyperlapse.ProductInfo)
+   |   |   |     AppendClientDetails : class [mscorlib]System.Collections.Generic.IDictionary`2<string,string>(class [mscorlib]System.Collections.Generic.IDictionary`2<string,string>)
+   |   |   |     Event : void(string,class [mscorlib]System.Collections.Generic.IDictionary`2<string,string>,class [mscorlib]System.Collections.Generic.IDictionary`2<string,float64>)
+   |   |   |     Exception : void(class [mscorlib]System.Exception,class [mscorlib]System.Collections.Generic.IDictionary`2<string,string>,class [mscorlib]System.Collections.Generic.IDictionary`2<string,float64>)
+   |   |   |___[MET] Metric : void(string,float64)
+   |   |   |___[MET] PageView : void(string)
+   |   |   |     UnhandledException : void(class [mscorlib]System.Exception,class [mscorlib]System.Collections.Generic.IDictionary`2<string,string>,class [mscorlib]System.Collections.Generic.IDictionary`2<string,float64>)
+   |   |   |___[MET] get_IsAutomaticCrashLoggingEnabled : bool()
+   |   |   |___[MET] get_SessionID : string()
+   |   |   |___[MET] set_IsAutomaticCrashLoggingEnabled : void(bool)
+   |   |   |___[PTY] IsAutomaticCrashLoggingEnabled : instance bool()
+   |   |   |___[PTY] SessionID : instance string()
+   |   |
+   |   |___[INT] Microsoft.Research.Hyperlapse.IAdvertisingModel
+   |   |   |     .class interface public abstract auto ansi 
+   |   |   |___[MET] AdClicked : bool(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.AdvertisementViewModel)
+   |   |   |___[MET] DownloadLatestAds : class [mscorlib]System.Threading.Tasks.Task()
+   |   |   |___[MET] get_AdvertisingViewModel : object()
+   |   |   |___[PTY] AdvertisingViewModel : instance object()
+   |   |
+   |   |___[INT] Microsoft.Research.Hyperlapse.IFreeSpaceProvider
+   |   |   |     .class interface public abstract auto ansi 
+   |   |   |     GetFreeSpaceForPath : class [mscorlib]System.Tuple`2<uint64,uint64>(string)
+   |   |
+   |   |___[INT] Microsoft.Research.Hyperlapse.IHyperlapseUserInterface
+   |   |   |     .class interface public abstract auto ansi 
+   |   |   |      implements [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.IUserInterface 
+   |   |   |___[MET] ChooseDirectory : string(string)
+   |   |   |___[MET] CloseApplication : void()
+   |   |   |___[MET] HideBusyMessage : void()
+   |   |   |___[MET] OpenFile : string(string[],string[][])
+   |   |   |___[MET] SaveFile : string(string[],string[][],string,string)
+   |   |   |___[MET] ShowBusyMessage : class [mscorlib]System.Threading.Tasks.Task(string,string)
+   |   |   |     ShowConfirmMessageWithCancel : class [mscorlib]System.Threading.Tasks.Task`1<valuetype Microsoft.Research.Hyperlapse.HyperlapseDialogResult>(string,string)
+   |   |
+   |   |___[INT] Microsoft.Research.Hyperlapse.INativeHyperlapseEngine
+   |   |   |     .class interface public abstract auto ansi 
+   |   |   |___[MET] CancelProcessing : void()
+   |   |   |___[MET] Process : bool(int32,string,string,string,string,int32,int32,int32,class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Rational,int32,int32,int32,string,int32,bool,bool,float32,bool)
+   |   |   |___[MET] SetActivationInfo : void(string,string)
+   |   |   |___[MET] add_ActivationStatusChanged : void(class [mscorlib]System.EventHandler)
+   |   |   |___[MET] add_ProgressChanged : void(class [mscorlib]System.EventHandler)
+   |   |   |___[MET] get_CurrentProgess : float32()
+   |   |   |___[MET] get_CurrentStatus : string()
+   |   |   |___[MET] get_LastError : string()
+   |   |   |___[MET] get_ProductIsActivated : bool()
+   |   |   |___[MET] get_TrialException : class [mscorlib]System.Exception()
+   |   |   |___[MET] remove_ActivationStatusChanged : void(class [mscorlib]System.EventHandler)
+   |   |   |___[MET] remove_ProgressChanged : void(class [mscorlib]System.EventHandler)
+   |   |   |___[EVT] ActivationStatusChanged : [mscorlib]System.EventHandler
+   |   |   |___[EVT] ProgressChanged : [mscorlib]System.EventHandler
+   |   |   |___[PTY] CurrentProgess : instance float32()
+   |   |   |___[PTY] CurrentStatus : instance string()
+   |   |   |___[PTY] LastError : instance string()
+   |   |   |___[PTY] ProductIsActivated : instance bool()
+   |   |   |___[PTY] TrialException : instance class [mscorlib]System.Exception()
+   |   |
+   |   |___[INT] Microsoft.Research.Hyperlapse.ITempPathProvider
+   |   |   |     .class interface public abstract auto ansi 
+   |   |   |___[MET] ExpandEnvironmentVariables : string(string)
+   |   |   |___[MET] RestoreEnvironmentVariables : string(string)
+   |   |   |___[MET] get_TempPath : string()
+   |   |   |___[MET] get_TempPathEnvironmentVariable : string()
+   |   |   |___[PTY] TempPath : instance string()
+   |   |   |___[PTY] TempPathEnvironmentVariable : instance string()
+   |   |
+   |   |___[INT] Microsoft.Research.Hyperlapse.IVideoReader
+   |   |   |     .class interface public abstract auto ansi 
+   |   |   |___[MET] ReadInfoFromFile : class Microsoft.Research.Hyperlapse.VideoInfo(string)
+   |   |
+   |   |___[INT] Microsoft.Research.Hyperlapse.IVideoTestWriter
+   |   |   |     .class interface public abstract auto ansi 
+   |   |   |___[MET] TestWrite : bool(string,int32,int32,class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Rational,int32,bool)
+   |   |
+   |   |___[CLS] Microsoft.Research.Hyperlapse.ImportViewModel
+   |   |   |     .class public auto ansi beforefieldinit 
+   |   |   |      extends [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.ViewModel 
+   |   |   |___[VCL] <GoBack>d__3
+   |   |   |   |     .class value nested private auto ansi sealed beforefieldinit 
+   |   |   |   |      extends [mscorlib]System.ValueType 
+   |   |   |   |      implements [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine 
+   |   |   |   |     .custom instance void [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() = ( 01 00 00 00 )  ...
+   |   |   |   |___[FLD] <>1__state : public int32
+   |   |   |   |___[FLD] <>4__this : public class Microsoft.Research.Hyperlapse.ImportViewModel
+   |   |   |   |___[FLD] <>t__builder : public valuetype [mscorlib]System.Runtime.CompilerServices.AsyncTaskMethodBuilder
+   |   |   |   |___[FLD] <>t__stack : private object
+   |   |   |   |___[FLD] <>u__$awaiter4 : private valuetype [mscorlib]System.Runtime.CompilerServices.TaskAwaiter`1<bool>
+   |   |   |   |___[MET] MoveNext : void()
+   |   |   |   |___[MET] SetStateMachine : void(class [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine)
+   |   |   |
+   |   |   |___[FLD] <GoBackCommand>k__BackingField : private class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.AsyncCommand
+   |   |   |___[FLD] <GoToSettingsCommand>k__BackingField : private class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command
+   |   |   |___[FLD] <NavigationViewModel>k__BackingField : private class Microsoft.Research.Hyperlapse.NavigationViewModel
+   |   |   |___[FLD] <WindowOperationsVM>k__BackingField : private class Microsoft.Research.Hyperlapse.WindowOperationsViewModel
+   |   |   |___[FLD] project : private class Microsoft.Research.Hyperlapse.Project
+   |   |   |___[MET] .ctor : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.INavigation,class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.IUserInterface,class Microsoft.Research.Hyperlapse.WindowOperationsViewModel)
+   |   |   |     <.ctor>b__0 : bool()
+   |   |   |___[MET] GoBack : class [mscorlib]System.Threading.Tasks.Task()
+   |   |   |___[MET] GoToSettings : void()
+   |   |   |___[MET] OnNavigatedTo : void(object[])
+   |   |   |___[MET] get_CurrentTime : valuetype [mscorlib]System.TimeSpan()
+   |   |   |___[MET] get_EndTime : valuetype [mscorlib]System.TimeSpan()
+   |   |   |___[MET] get_FramesPerSecond : class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Rational()
+   |   |   |___[MET] get_GoBackCommand : class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.AsyncCommand()
+   |   |   |___[MET] get_GoToSettingsCommand : class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command()
+   |   |   |___[MET] get_NavigationViewModel : class Microsoft.Research.Hyperlapse.NavigationViewModel()
+   |   |   |___[MET] get_RotationAmount : float64()
+   |   |   |___[MET] get_StartTime : valuetype [mscorlib]System.TimeSpan()
+   |   |   |___[MET] get_VideoDuration : valuetype [mscorlib]System.TimeSpan()
+   |   |   |___[MET] get_VideoSource : class [System]System.Uri()
+   |   |   |___[MET] get_WindowOperationsVM : class Microsoft.Research.Hyperlapse.WindowOperationsViewModel()
+   |   |   |___[MET] set_CurrentTime : void(valuetype [mscorlib]System.TimeSpan)
+   |   |   |___[MET] set_EndTime : void(valuetype [mscorlib]System.TimeSpan)
+   |   |   |___[MET] set_GoBackCommand : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.AsyncCommand)
+   |   |   |___[MET] set_GoToSettingsCommand : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command)
+   |   |   |___[MET] set_NavigationViewModel : void(class Microsoft.Research.Hyperlapse.NavigationViewModel)
+   |   |   |___[MET] set_RotationAmount : void(float64)
+   |   |   |___[MET] set_StartTime : void(valuetype [mscorlib]System.TimeSpan)
+   |   |   |___[MET] set_WindowOperationsVM : void(class Microsoft.Research.Hyperlapse.WindowOperationsViewModel)
+   |   |   |___[PTY] CurrentTime : instance valuetype [mscorlib]System.TimeSpan()
+   |   |   |___[PTY] EndTime : instance valuetype [mscorlib]System.TimeSpan()
+   |   |   |___[PTY] FramesPerSecond : instance class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Rational()
+   |   |   |___[PTY] GoBackCommand : instance class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.AsyncCommand()
+   |   |   |___[PTY] GoToSettingsCommand : instance class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command()
+   |   |   |___[PTY] NavigationViewModel : instance class Microsoft.Research.Hyperlapse.NavigationViewModel()
+   |   |   |___[PTY] RotationAmount : instance float64()
+   |   |   |___[PTY] StartTime : instance valuetype [mscorlib]System.TimeSpan()
+   |   |   |___[PTY] VideoDuration : instance valuetype [mscorlib]System.TimeSpan()
+   |   |   |___[PTY] VideoSource : instance class [System]System.Uri()
+   |   |   |___[PTY] WindowOperationsVM : instance class Microsoft.Research.Hyperlapse.WindowOperationsViewModel()
+   |   |
+   |   |___[CLS] Microsoft.Research.Hyperlapse.MainWindowViewModel
+   |   |   |     .class public auto ansi beforefieldinit 
+   |   |   |      extends [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.ViewModel 
+   |   |   |___[VCL] <CheckIfCanExit>d__0
+   |   |   |   |     .class value nested private auto ansi sealed beforefieldinit 
+   |   |   |   |      extends [mscorlib]System.ValueType 
+   |   |   |   |      implements [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine 
+   |   |   |   |     .custom instance void [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() = ( 01 00 00 00 )  ...
+   |   |   |   |___[FLD] <>1__state : public int32
+   |   |   |   |___[FLD] <>4__this : public class Microsoft.Research.Hyperlapse.MainWindowViewModel
+   |   |   |   |___[FLD] <>t__builder : public valuetype [mscorlib]System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<bool>
+   |   |   |   |___[FLD] <>t__stack : private object
+   |   |   |   |___[FLD] <>u__$awaiter1 : private valuetype [mscorlib]System.Runtime.CompilerServices.TaskAwaiter`1<bool>
+   |   |   |   |___[MET] MoveNext : void()
+   |   |   |   |___[MET] SetStateMachine : void(class [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine)
+   |   |   |
+   |   |   |___[FLD] <WindowOperationsViewModel>k__BackingField : private class Microsoft.Research.Hyperlapse.WindowOperationsViewModel
+   |   |   |___[FLD] activationManager : private class Microsoft.Research.Hyperlapse.ActivationManager
+   |   |   |___[FLD] firstRun : private class Microsoft.Research.Hyperlapse.FirstRunExperience
+   |   |   |___[FLD] scratchManager : private class Microsoft.Research.Hyperlapse.ScratchManager
+   |   |   |___[MET] .ctor : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.INavigation,class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.IUserInterface,class Microsoft.Research.Hyperlapse.WindowOperationsViewModel,class Microsoft.Research.Hyperlapse.ScratchManager,class Microsoft.Research.Hyperlapse.FirstRunExperience,class Microsoft.Research.Hyperlapse.ActivationManager)
+   |   |   |     CheckIfCanExit : class [mscorlib]System.Threading.Tasks.Task`1<bool>()
+   |   |   |     GetStartupProperties : class [mscorlib]System.Collections.Generic.Dictionary`2<string,object>()
+   |   |   |___[MET] OnNavigatedFrom : void()
+   |   |   |___[MET] OnNavigatedTo : void(object[])
+   |   |   |___[MET] get_WindowOperationsViewModel : class Microsoft.Research.Hyperlapse.WindowOperationsViewModel()
+   |   |   |___[MET] set_WindowOperationsViewModel : void(class Microsoft.Research.Hyperlapse.WindowOperationsViewModel)
+   |   |   |___[PTY] WindowOperationsViewModel : instance class Microsoft.Research.Hyperlapse.WindowOperationsViewModel()
+   |   |
+   |   |___[CLS] Microsoft.Research.Hyperlapse.NavigationViewModel
+   |   |   |     .class public auto ansi beforefieldinit 
+   |   |   |___[FLD] <NavigateCommand>k__BackingField : private class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command`1<string>
+   |   |   |___[FLD] pageName : private string
+   |   |   |___[STF] pages : private static initonly class [mscorlib]System.Collections.Generic.List`1<string>
+   |   |   |___[FLD] platformNavigation : private class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.INavigation
+   |   |   |___[STM] .cctor : void()
+   |   |   |___[MET] .ctor : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.INavigation,string)
+   |   |   |___[MET] CanNavigate : bool(string)
+   |   |   |___[MET] Navigate : void(string)
+   |   |   |___[MET] get_GoBackCommand : class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command()
+   |   |   |     get_NavigateCommand : class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command`1<string>()
+   |   |   |     get_NavigationItems : class [mscorlib]System.Collections.Generic.IEnumerable`1<string>()
+   |   |   |___[MET] get_PageIndex : int32()
+   |   |   |     set_NavigateCommand : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command`1<string>)
+   |   |   |___[PTY] GoBackCommand : instance class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command()
+   |   |   |___[PTY] NavigateCommand : instance class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command`1<string>()
+   |   |   |___[PTY] NavigationItems : instance class [mscorlib]System.Collections.Generic.IEnumerable`1<string>()
+   |   |   |___[PTY] PageIndex : instance int32()
+   |   |
+   |   |___[CLS] Microsoft.Research.Hyperlapse.OptionsViewModel
+   |   |   |     .class public auto ansi beforefieldinit 
+   |   |   |      extends [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.ViewModel 
+   |   |   |___[FLD] <AccelerationOptionList>k__BackingField : private class [mscorlib]System.Collections.Generic.List`1<string>
+   |   |   |___[FLD] <CanChangeTempLocation>k__BackingField : private bool
+   |   |   |___[FLD] <CancelCommand>k__BackingField : private class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command
+   |   |   |___[FLD] <ResetTempLocationCommand>k__BackingField : private class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command
+   |   |   |___[FLD] <SaveSettingsCommand>k__BackingField : private class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command
+   |   |   |___[FLD] <SetTempLocationCommand>k__BackingField : private class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command`1<string>
+   |   |   |___[FLD] accelerationOptions : private class Microsoft.Research.Hyperlapse.AccelerationOptions
+   |   |   |___[FLD] scratchManager : private class Microsoft.Research.Hyperlapse.ScratchManager
+   |   |   |___[FLD] updateChecker : private class Microsoft.Research.Hyperlapse.UpdateChecker
+   |   |   |___[MET] .ctor : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.INavigation,class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.IUserInterface,class Microsoft.Research.Hyperlapse.ScratchManager,class Microsoft.Research.Hyperlapse.UpdateChecker,class Microsoft.Research.Hyperlapse.AccelerationOptions)
+   |   |   |     <.ctor>b__1 : void(string)
+   |   |   |     <.ctor>b__2 : void()
+   |   |   |     <.ctor>b__3 : bool()
+   |   |   |___[MET] GetRootDrive : string()
+   |   |   |___[MET] ResetTempLocation : void()
+   |   |   |___[MET] UpdateTempLocation : void(string)
+   |   |   |___[MET] get_AccelerationIndex : int32()
+   |   |   |     get_AccelerationOptionList : class [mscorlib]System.Collections.Generic.List`1<string>()
+   |   |   |___[MET] get_CanChangeTempLocation : bool()
+   |   |   |___[MET] get_CancelCommand : class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command()
+   |   |   |___[MET] get_CheckForUpdates : bool()
+   |   |   |___[MET] get_ExpandedTempLocation : string()
+   |   |   |___[MET] get_ResetTempLocationCommand : class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command()
+   |   |   |___[MET] get_SaveSettingsCommand : class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command()
+   |   |   |     get_SetTempLocationCommand : class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command`1<string>()
+   |   |   |___[MET] get_TempLocation : string()
+   |   |   |___[MET] get_TempLocationExtraInfo : string()
+   |   |   |___[MET] get_UseHardwareVideoEncoder : bool()
+   |   |   |___[MET] set_AccelerationIndex : void(int32)
+   |   |   |     set_AccelerationOptionList : void(class [mscorlib]System.Collections.Generic.List`1<string>)
+   |   |   |___[MET] set_CanChangeTempLocation : void(bool)
+   |   |   |___[MET] set_CancelCommand : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command)
+   |   |   |___[MET] set_CheckForUpdates : void(bool)
+   |   |   |___[MET] set_ResetTempLocationCommand : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command)
+   |   |   |___[MET] set_SaveSettingsCommand : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command)
+   |   |   |     set_SetTempLocationCommand : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command`1<string>)
+   |   |   |___[MET] set_UseHardwareVideoEncoder : void(bool)
+   |   |   |___[PTY] AccelerationIndex : instance int32()
+   |   |   |___[PTY] AccelerationOptionList : instance class [mscorlib]System.Collections.Generic.List`1<string>()
+   |   |   |___[PTY] CanChangeTempLocation : instance bool()
+   |   |   |___[PTY] CancelCommand : instance class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command()
+   |   |   |___[PTY] CheckForUpdates : instance bool()
+   |   |   |___[PTY] ExpandedTempLocation : instance string()
+   |   |   |___[PTY] ResetTempLocationCommand : instance class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command()
+   |   |   |___[PTY] SaveSettingsCommand : instance class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command()
+   |   |   |___[PTY] SetTempLocationCommand : instance class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command`1<string>()
+   |   |   |___[PTY] TempLocation : instance string()
+   |   |   |___[PTY] TempLocationExtraInfo : instance string()
+   |   |   |___[PTY] UseHardwareVideoEncoder : instance bool()
+   |   |
+   |   |___[CLS] Microsoft.Research.Hyperlapse.ProcessViewModel
+   |   |   |     .class public auto ansi beforefieldinit 
+   |   |   |      extends [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.ViewModel 
+   |   |   |___[VCL] <Cancel>d__6
+   |   |   |   |     .class value nested private auto ansi sealed beforefieldinit 
+   |   |   |   |      extends [mscorlib]System.ValueType 
+   |   |   |   |      implements [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine 
+   |   |   |   |     .custom instance void [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() = ( 01 00 00 00 )  ...
+   |   |   |   |___[FLD] <>1__state : public int32
+   |   |   |   |___[FLD] <>4__this : public class Microsoft.Research.Hyperlapse.ProcessViewModel
+   |   |   |   |___[FLD] <>t__builder : public valuetype [mscorlib]System.Runtime.CompilerServices.AsyncTaskMethodBuilder
+   |   |   |   |___[FLD] <>t__stack : private object
+   |   |   |   |___[FLD] <>u__$awaiter8 : private valuetype [mscorlib]System.Runtime.CompilerServices.TaskAwaiter`1<bool>
+   |   |   |   |___[FLD] <>u__$awaiter9 : private valuetype [mscorlib]System.Runtime.CompilerServices.TaskAwaiter
+   |   |   |   |___[FLD] <confirm>5__7 : public bool
+   |   |   |   |___[MET] MoveNext : void()
+   |   |   |   |___[MET] SetStateMachine : void(class [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine)
+   |   |   |
+   |   |   |___[VCL] <engine_ProcessingFailed>d__2
+   |   |   |   |     .class value nested private auto ansi sealed beforefieldinit 
+   |   |   |   |      extends [mscorlib]System.ValueType 
+   |   |   |   |      implements [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine 
+   |   |   |   |     .custom instance void [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() = ( 01 00 00 00 )  ...
+   |   |   |   |___[FLD] <>1__state : public int32
+   |   |   |   |___[FLD] <>4__this : public class Microsoft.Research.Hyperlapse.ProcessViewModel
+   |   |   |   |___[FLD] <>g__initLocal1 : public class [mscorlib]System.Collections.Generic.Dictionary`2<string,object>
+   |   |   |   |___[FLD] <>t__builder : public valuetype [mscorlib]System.Runtime.CompilerServices.AsyncVoidMethodBuilder
+   |   |   |   |___[FLD] <>t__stack : private object
+   |   |   |   |___[FLD] <>u__$awaiter3 : private valuetype [mscorlib]System.Runtime.CompilerServices.TaskAwaiter
+   |   |   |   |___[FLD] e : public class Microsoft.Research.Hyperlapse.ProcessingFailedEventArgs
+   |   |   |   |___[MET] MoveNext : void()
+   |   |   |   |___[MET] SetStateMachine : void(class [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine)
+   |   |   |
+   |   |   |___[FLD] <CancelCommand>k__BackingField : private class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.AsyncCommand
+   |   |   |___[FLD] <NavigationViewModel>k__BackingField : private class Microsoft.Research.Hyperlapse.NavigationViewModel
+   |   |   |___[FLD] <StartProcessingCommand>k__BackingField : private class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command`1<int32>
+   |   |   |___[FLD] accelerationOptions : private class Microsoft.Research.Hyperlapse.AccelerationOptions
+   |   |   |___[FLD] engine : private class Microsoft.Research.Hyperlapse.HyperlapseEngine
+   |   |   |___[FLD] firstRunExperience : private class Microsoft.Research.Hyperlapse.FirstRunExperience
+   |   |   |___[FLD] isFailed : private bool
+   |   |   |___[FLD] lastUiUpdate : private valuetype [mscorlib]System.DateTime
+   |   |   |___[FLD] processingStart : private valuetype [mscorlib]System.DateTime
+   |   |   |___[FLD] project : private class Microsoft.Research.Hyperlapse.Project
+   |   |   |___[FLD] videoBitrateEstimator : private class Microsoft.Research.Hyperlapse.VideoBitrateEstimator
+   |   |   |___[FLD] windowOperationsVM : private class Microsoft.Research.Hyperlapse.WindowOperationsViewModel
+   |   |   |___[MET] .ctor : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.INavigation,class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.IUserInterface,class Microsoft.Research.Hyperlapse.HyperlapseEngine,class Microsoft.Research.Hyperlapse.WindowOperationsViewModel,class Microsoft.Research.Hyperlapse.AccelerationOptions,class Microsoft.Research.Hyperlapse.VideoBitrateEstimator,class Microsoft.Research.Hyperlapse.FirstRunExperience)
+   |   |   |___[MET] Cancel : class [mscorlib]System.Threading.Tasks.Task()
+   |   |   |___[MET] DeleteEngine : void()
+   |   |   |     GetStartProcessingProperties : class [mscorlib]System.Collections.Generic.Dictionary`2<string,object>()
+   |   |   |___[MET] OnNavigatedTo : void(object[])
+   |   |   |___[MET] StartProcessing : void(int32)
+   |   |   |___[MET] engine_ProcessingCancelled : void(object,class [mscorlib]System.EventArgs)
+   |   |   |___[MET] engine_ProcessingFailed : void(object,class Microsoft.Research.Hyperlapse.ProcessingFailedEventArgs)
+   |   |   |___[MET] engine_ProcessingFinished : void(object,class Microsoft.Research.Hyperlapse.ProcessingFinishedEventArgs)
+   |   |   |___[MET] engine_ProgressChanged : void(object,class [mscorlib]System.EventArgs)
+   |   |   |___[MET] get_CancelCommand : class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.AsyncCommand()
+   |   |   |___[MET] get_Engine : class Microsoft.Research.Hyperlapse.HyperlapseEngine()
+   |   |   |___[MET] get_FrameTimeToDisplay : valuetype [mscorlib]System.TimeSpan()
+   |   |   |___[MET] get_IsFailed : bool()
+   |   |   |___[MET] get_NavigationViewModel : class Microsoft.Research.Hyperlapse.NavigationViewModel()
+   |   |   |___[MET] get_RotationAmount : float64()
+   |   |   |___[MET] get_SourceVideo : class [System]System.Uri()
+   |   |   |     get_StartProcessingCommand : class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command`1<int32>()
+   |   |   |___[MET] get_Status : string()
+   |   |   |___[MET] get_TotalProgress : float64()
+   |   |   |___[MET] set_CancelCommand : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.AsyncCommand)
+   |   |   |___[MET] set_IsFailed : void(bool)
+   |   |   |___[MET] set_NavigationViewModel : void(class Microsoft.Research.Hyperlapse.NavigationViewModel)
+   |   |   |     set_StartProcessingCommand : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command`1<int32>)
+   |   |   |___[PTY] CancelCommand : instance class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.AsyncCommand()
+   |   |   |___[PTY] Engine : instance class Microsoft.Research.Hyperlapse.HyperlapseEngine()
+   |   |   |___[PTY] FrameTimeToDisplay : instance valuetype [mscorlib]System.TimeSpan()
+   |   |   |___[PTY] IsFailed : instance bool()
+   |   |   |___[PTY] NavigationViewModel : instance class Microsoft.Research.Hyperlapse.NavigationViewModel()
+   |   |   |___[PTY] RotationAmount : instance float64()
+   |   |   |___[PTY] SourceVideo : instance class [System]System.Uri()
+   |   |   |___[PTY] StartProcessingCommand : instance class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command`1<int32>()
+   |   |   |___[PTY] Status : instance string()
+   |   |   |___[PTY] TotalProgress : instance float64()
+   |   |
+   |   |___[CLS] Microsoft.Research.Hyperlapse.ProcessingFailedEventArgs
+   |   |   |     .class public auto ansi beforefieldinit 
+   |   |   |___[FLD] <ErrorMessage>k__BackingField : private string
+   |   |   |___[MET] .ctor : void(string)
+   |   |   |___[MET] get_ErrorMessage : string()
+   |   |   |___[MET] set_ErrorMessage : void(string)
+   |   |   |___[PTY] ErrorMessage : instance string()
+   |   |
+   |   |___[CLS] Microsoft.Research.Hyperlapse.ProcessingFinishedEventArgs
+   |   |   |     .class public auto ansi beforefieldinit 
+   |   |   |___[FLD] <Parameters>k__BackingField : private class Microsoft.Research.Hyperlapse.HyperlapseParameters
+   |   |   |___[MET] .ctor : void(class Microsoft.Research.Hyperlapse.HyperlapseParameters)
+   |   |   |___[MET] get_Parameters : class Microsoft.Research.Hyperlapse.HyperlapseParameters()
+   |   |   |___[MET] set_Parameters : void(class Microsoft.Research.Hyperlapse.HyperlapseParameters)
+   |   |   |___[PTY] Parameters : instance class Microsoft.Research.Hyperlapse.HyperlapseParameters()
+   |   |
+   |   |___[CLS] Microsoft.Research.Hyperlapse.ProcessingTimeEstimator
+   |   |   |     .class public auto ansi beforefieldinit 
+   |   |   |___[MET] .ctor : void()
+   |   |   |___[MET] EstimateTime : valuetype [mscorlib]System.TimeSpan(valuetype [mscorlib]System.TimeSpan,bool)
+   |   |
+   |   |___[CLS] Microsoft.Research.Hyperlapse.ProductInfo
+   |   |   |     .class public auto ansi beforefieldinit 
+   |   |   |___[ENU] EditionEnum
+   |   |   |   |     .class enum nested public auto ansi sealed 
+   |   |   |   |      extends [mscorlib]System.Enum 
+   |   |   |   |___[STF] Pro : public static literal valuetype Microsoft.Research.Hyperlapse.ProductInfo/EditionEnum
+   |   |   |   |___[STF] YI : public static literal valuetype Microsoft.Research.Hyperlapse.ProductInfo/EditionEnum
+   |   |   |   |___[FLD] value__ : public specialname rtspecialname int32
+   |   |   |
+   |   |   |___[ENU] PlatformEnum
+   |   |   |   |     .class enum nested public auto ansi sealed 
+   |   |   |   |      extends [mscorlib]System.Enum 
+   |   |   |   |___[STF] Mac : public static literal valuetype Microsoft.Research.Hyperlapse.ProductInfo/PlatformEnum
+   |   |   |   |___[STF] Windows : public static literal valuetype Microsoft.Research.Hyperlapse.ProductInfo/PlatformEnum
+   |   |   |   |___[FLD] value__ : public specialname rtspecialname int32
+   |   |   |
+   |   |   |___[FLD] <Edition>k__BackingField : private valuetype Microsoft.Research.Hyperlapse.ProductInfo/EditionEnum
+   |   |   |___[FLD] <Platform>k__BackingField : private valuetype Microsoft.Research.Hyperlapse.ProductInfo/PlatformEnum
+   |   |   |___[FLD] baseAppName : private initonly string
+   |   |   |___[MET] .ctor : void()
+   |   |   |___[MET] get_ActivationConfigFile : string()
+   |   |   |___[MET] get_ActivationRegistrationFile : string()
+   |   |   |___[MET] get_ActivationRegistrationFolder : string()
+   |   |   |___[MET] get_ApplicationName : string()
+   |   |   |___[MET] get_ApplicationShortName : string()
+   |   |   |___[MET] get_BuyOnlineLink : string()
+   |   |   |___[MET] get_Edition : valuetype Microsoft.Research.Hyperlapse.ProductInfo/EditionEnum()
+   |   |   |___[MET] get_Platform : valuetype Microsoft.Research.Hyperlapse.ProductInfo/PlatformEnum()
+   |   |   |___[MET] set_Edition : void(valuetype Microsoft.Research.Hyperlapse.ProductInfo/EditionEnum)
+   |   |   |___[MET] set_Platform : void(valuetype Microsoft.Research.Hyperlapse.ProductInfo/PlatformEnum)
+   |   |   |___[PTY] ActivationConfigFile : instance string()
+   |   |   |___[PTY] ActivationRegistrationFile : instance string()
+   |   |   |___[PTY] ActivationRegistrationFolder : instance string()
+   |   |   |___[PTY] ApplicationName : instance string()
+   |   |   |___[PTY] ApplicationShortName : instance string()
+   |   |   |___[PTY] BuyOnlineLink : instance string()
+   |   |   |___[PTY] Edition : instance valuetype Microsoft.Research.Hyperlapse.ProductInfo/EditionEnum()
+   |   |   |___[PTY] Platform : instance valuetype Microsoft.Research.Hyperlapse.ProductInfo/PlatformEnum()
+   |   |
+   |   |___[CLS] Microsoft.Research.Hyperlapse.Project
+   |   |   |     .class public auto ansi beforefieldinit 
+   |   |   |___[FLD] <CalibrationInfo>k__BackingField : private class Microsoft.Research.Hyperlapse.CalibrationInfo
+   |   |   |___[FLD] <CreditDisabled>k__BackingField : private bool
+   |   |   |___[FLD] <OutputFramesPerSecond>k__BackingField : private class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Rational
+   |   |   |___[FLD] <OutputSize>k__BackingField : private class Microsoft.Research.Hyperlapse.Size
+   |   |   |___[FLD] <ProjectFile>k__BackingField : private string
+   |   |   |___[FLD] <SelectedFrameTime>k__BackingField : private valuetype [mscorlib]System.TimeSpan
+   |   |   |___[FLD] <SpeedupFactor>k__BackingField : private int32
+   |   |   |___[FLD] <VideoInfo>k__BackingField : private class Microsoft.Research.Hyperlapse.VideoInfo
+   |   |   |___[FLD] <VideoRotationAmount>k__BackingField : private float64
+   |   |   |___[FLD] <WorkingDirectory>k__BackingField : private string
+   |   |   |___[FLD] ValueChanged : private class [mscorlib]System.EventHandler
+   |   |   |___[FLD] endTime : private valuetype [mscorlib]System.TimeSpan
+   |   |   |___[FLD] isSaved : private bool
+   |   |   |___[FLD] outputLocation : private string
+   |   |   |___[FLD] outputLocationRegex : private class [System]System.Text.RegularExpressions.Regex
+   |   |   |___[FLD] startTime : private valuetype [mscorlib]System.TimeSpan
+   |   |   |___[FLD] useAdvancedSmoothing : private bool
+   |   |   |___[FLD] videoFormatTester : private class Microsoft.Research.Hyperlapse.VideoFormatTester
+   |   |   |___[MET] .ctor : void(class Microsoft.Research.Hyperlapse.VideoFormatTester)
+   |   |   |___[MET] ConvertTimeSpanToFrameTime : int32(valuetype [mscorlib]System.TimeSpan)
+   |   |   |     GetAvailableOutputSizes : class [mscorlib]System.Collections.Generic.List`1<class Microsoft.Research.Hyperlapse.Size>()
+   |   |   |     GetAvailabledOutputFrameRates : class [mscorlib]System.Collections.Generic.List`1<class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Rational>()
+   |   |   |___[MET] GetDefaultOutputLocation : string(string)
+   |   |   |___[MET] GetOutputHyperlapseLength : valuetype [mscorlib]System.TimeSpan()
+   |   |   |___[MET] add_ValueChanged : void(class [mscorlib]System.EventHandler)
+   |   |   |___[MET] get_CalibrationInfo : class Microsoft.Research.Hyperlapse.CalibrationInfo()
+   |   |   |___[MET] get_CreditDisabled : bool()
+   |   |   |___[MET] get_CreditLength : valuetype [mscorlib]System.TimeSpan()
+   |   |   |___[MET] get_EndTime : valuetype [mscorlib]System.TimeSpan()
+   |   |   |___[MET] get_InputLength : valuetype [mscorlib]System.TimeSpan()
+   |   |   |___[MET] get_IsSaved : bool()
+   |   |   |___[MET] get_OutputFile : string()
+   |   |   |___[MET] get_OutputFramesPerSecond : class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Rational()
+   |   |   |___[MET] get_OutputLength : valuetype [mscorlib]System.TimeSpan()
+   |   |   |___[MET] get_OutputSize : class Microsoft.Research.Hyperlapse.Size()
+   |   |   |___[MET] get_ProjectFile : string()
+   |   |   |___[MET] get_ProjectName : string()
+   |   |   |___[MET] get_RoundedDuration : valuetype [mscorlib]System.TimeSpan()
+   |   |   |___[MET] get_SelectedFrameTime : valuetype [mscorlib]System.TimeSpan()
+   |   |   |___[MET] get_SpeedupFactor : int32()
+   |   |   |___[MET] get_StartTime : valuetype [mscorlib]System.TimeSpan()
+   |   |   |___[MET] get_UseAdvancedSmoothing : bool()
+   |   |   |___[MET] get_UseAdvancedSmoothingSettingEnabled : bool()
+   |   |   |___[MET] get_VideoInfo : class Microsoft.Research.Hyperlapse.VideoInfo()
+   |   |   |___[MET] get_VideoRotationAmount : float64()
+   |   |   |___[MET] get_WorkingDirectory : string()
+   |   |   |___[MET] remove_ValueChanged : void(class [mscorlib]System.EventHandler)
+   |   |   |___[MET] set_CalibrationInfo : void(class Microsoft.Research.Hyperlapse.CalibrationInfo)
+   |   |   |___[MET] set_CreditDisabled : void(bool)
+   |   |   |___[MET] set_EndTime : void(valuetype [mscorlib]System.TimeSpan)
+   |   |   |___[MET] set_IsSaved : void(bool)
+   |   |   |___[MET] set_OutputFile : void(string)
+   |   |   |___[MET] set_OutputFramesPerSecond : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Rational)
+   |   |   |___[MET] set_OutputSize : void(class Microsoft.Research.Hyperlapse.Size)
+   |   |   |___[MET] set_ProjectFile : void(string)
+   |   |   |___[MET] set_SelectedFrameTime : void(valuetype [mscorlib]System.TimeSpan)
+   |   |   |___[MET] set_SpeedupFactor : void(int32)
+   |   |   |___[MET] set_StartTime : void(valuetype [mscorlib]System.TimeSpan)
+   |   |   |___[MET] set_UseAdvancedSmoothing : void(bool)
+   |   |   |___[MET] set_VideoInfo : void(class Microsoft.Research.Hyperlapse.VideoInfo)
+   |   |   |___[MET] set_VideoRotationAmount : void(float64)
+   |   |   |___[MET] set_WorkingDirectory : void(string)
+   |   |   |___[EVT] ValueChanged : [mscorlib]System.EventHandler
+   |   |   |___[PTY] CalibrationInfo : instance class Microsoft.Research.Hyperlapse.CalibrationInfo()
+   |   |   |___[PTY] CreditDisabled : instance bool()
+   |   |   |___[PTY] CreditLength : instance valuetype [mscorlib]System.TimeSpan()
+   |   |   |___[PTY] EndTime : instance valuetype [mscorlib]System.TimeSpan()
+   |   |   |___[PTY] InputLength : instance valuetype [mscorlib]System.TimeSpan()
+   |   |   |___[PTY] IsSaved : instance bool()
+   |   |   |___[PTY] OutputFile : instance string()
+   |   |   |___[PTY] OutputFramesPerSecond : instance class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Rational()
+   |   |   |___[PTY] OutputLength : instance valuetype [mscorlib]System.TimeSpan()
+   |   |   |___[PTY] OutputSize : instance class Microsoft.Research.Hyperlapse.Size()
+   |   |   |___[PTY] ProjectFile : instance string()
+   |   |   |___[PTY] ProjectName : instance string()
+   |   |   |___[PTY] RoundedDuration : instance valuetype [mscorlib]System.TimeSpan()
+   |   |   |___[PTY] SelectedFrameTime : instance valuetype [mscorlib]System.TimeSpan()
+   |   |   |___[PTY] SpeedupFactor : instance int32()
+   |   |   |___[PTY] StartTime : instance valuetype [mscorlib]System.TimeSpan()
+   |   |   |___[PTY] UseAdvancedSmoothing : instance bool()
+   |   |   |___[PTY] UseAdvancedSmoothingSettingEnabled : instance bool()
+   |   |   |___[PTY] VideoInfo : instance class Microsoft.Research.Hyperlapse.VideoInfo()
+   |   |   |___[PTY] VideoRotationAmount : instance float64()
+   |   |   |___[PTY] WorkingDirectory : instance string()
+   |   |
+   |   |___[CLS] Microsoft.Research.Hyperlapse.ProjectInfo
+   |   |   |     .class public auto ansi serializable beforefieldinit 
+   |   |   |___[FLD] <CalibrationHousingOn>k__BackingField : private bool
+   |   |   |___[FLD] <CalibrationId>k__BackingField : private int32
+   |   |   |___[FLD] <CreditDisabled>k__BackingField : private bool
+   |   |   |___[FLD] <EndTimeTicks>k__BackingField : private int64
+   |   |   |___[FLD] <InputFileName>k__BackingField : private string
+   |   |   |___[FLD] <OutputFileName>k__BackingField : private string
+   |   |   |___[FLD] <OutputFramesPerSecond>k__BackingField : private float64
+   |   |   |___[FLD] <OutputFramesPerSecondAsRational>k__BackingField : private class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Rational
+   |   |   |___[FLD] <OutputSize>k__BackingField : private class Microsoft.Research.Hyperlapse.Size
+   |   |   |___[FLD] <RotationAmount>k__BackingField : private float64
+   |   |   |___[FLD] <SelectedFrameTimeTicks>k__BackingField : private int64
+   |   |   |___[FLD] <SpeedupFactor>k__BackingField : private int32
+   |   |   |___[FLD] <StartTimeTicks>k__BackingField : private int64
+   |   |   |___[FLD] <UseAdvancedSmoothing>k__BackingField : private bool
+   |   |   |___[FLD] <VideoMode>k__BackingField : private string
+   |   |   |___[MET] .ctor : void()
+   |   |   |___[MET] get_CalibrationHousingOn : bool()
+   |   |   |___[MET] get_CalibrationId : int32()
+   |   |   |___[MET] get_CreditDisabled : bool()
+   |   |   |___[MET] get_EndTimeTicks : int64()
+   |   |   |___[MET] get_InputFileName : string()
+   |   |   |___[MET] get_OutputFileName : string()
+   |   |   |___[MET] get_OutputFramesPerSecond : float64()
+   |   |   |___[MET] get_OutputFramesPerSecondAsRational : class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Rational()
+   |   |   |___[MET] get_OutputSize : class Microsoft.Research.Hyperlapse.Size()
+   |   |   |___[MET] get_RotationAmount : float64()
+   |   |   |___[MET] get_SelectedFrameTimeTicks : int64()
+   |   |   |___[MET] get_SpeedupFactor : int32()
+   |   |   |___[MET] get_StartTimeTicks : int64()
+   |   |   |___[MET] get_UseAdvancedSmoothing : bool()
+   |   |   |___[MET] get_VideoMode : string()
+   |   |   |___[MET] set_CalibrationHousingOn : void(bool)
+   |   |   |___[MET] set_CalibrationId : void(int32)
+   |   |   |___[MET] set_CreditDisabled : void(bool)
+   |   |   |___[MET] set_EndTimeTicks : void(int64)
+   |   |   |___[MET] set_InputFileName : void(string)
+   |   |   |___[MET] set_OutputFileName : void(string)
+   |   |   |___[MET] set_OutputFramesPerSecond : void(float64)
+   |   |   |___[MET] set_OutputFramesPerSecondAsRational : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Rational)
+   |   |   |___[MET] set_OutputSize : void(class Microsoft.Research.Hyperlapse.Size)
+   |   |   |___[MET] set_RotationAmount : void(float64)
+   |   |   |___[MET] set_SelectedFrameTimeTicks : void(int64)
+   |   |   |___[MET] set_SpeedupFactor : void(int32)
+   |   |   |___[MET] set_StartTimeTicks : void(int64)
+   |   |   |___[MET] set_UseAdvancedSmoothing : void(bool)
+   |   |   |___[MET] set_VideoMode : void(string)
+   |   |   |___[PTY] CalibrationHousingOn : instance bool()
+   |   |   |___[PTY] CalibrationId : instance int32()
+   |   |   |___[PTY] CreditDisabled : instance bool()
+   |   |   |___[PTY] EndTimeTicks : instance int64()
+   |   |   |___[PTY] InputFileName : instance string()
+   |   |   |___[PTY] OutputFileName : instance string()
+   |   |   |___[PTY] OutputFramesPerSecond : instance float64()
+   |   |   |___[PTY] OutputFramesPerSecondAsRational : instance class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Rational()
+   |   |   |___[PTY] OutputSize : instance class Microsoft.Research.Hyperlapse.Size()
+   |   |   |___[PTY] RotationAmount : instance float64()
+   |   |   |___[PTY] SelectedFrameTimeTicks : instance int64()
+   |   |   |___[PTY] SpeedupFactor : instance int32()
+   |   |   |___[PTY] StartTimeTicks : instance int64()
+   |   |   |___[PTY] UseAdvancedSmoothing : instance bool()
+   |   |   |___[PTY] VideoMode : instance string()
+   |   |
+   |   |___[CLS] Microsoft.Research.Hyperlapse.ProjectManager
+   |   |   |     .class public auto ansi beforefieldinit 
+   |   |   |___[STF] CS$<>9__CachedAnonymousMethodDelegate2 : private static class [mscorlib]System.Func`2<class Microsoft.Research.Hyperlapse.Size,bool>
+   |   |   |___[FLD] LatestProjectVersion : private initonly int32
+   |   |   |___[FLD] ProjectInfoFile : private initonly string
+   |   |   |___[FLD] ProjectVersionFile : private initonly string
+   |   |   |___[FLD] UnneededProjectFiles : private initonly string[]
+   |   |   |___[FLD] calibrationMatcher : private class Microsoft.Research.Hyperlapse.CalibrationMatcher
+   |   |   |___[FLD] scratchManager : private class Microsoft.Research.Hyperlapse.ScratchManager
+   |   |   |___[FLD] videoFormatTester : private class Microsoft.Research.Hyperlapse.VideoFormatTester
+   |   |   |___[FLD] videoReader : private class Microsoft.Research.Hyperlapse.IVideoReader
+   |   |   |___[MET] .ctor : void(class Microsoft.Research.Hyperlapse.IVideoReader,class Microsoft.Research.Hyperlapse.CalibrationMatcher,class Microsoft.Research.Hyperlapse.ScratchManager,class Microsoft.Research.Hyperlapse.VideoFormatTester)
+   |   |   |     <NewProjectFromVideoFile>b__1 : bool(class Microsoft.Research.Hyperlapse.Size)
+   |   |   |     GetRecentProjects : class [mscorlib]System.Collections.Generic.List`1<class Microsoft.Research.Hyperlapse.Project>()
+   |   |   |___[MET] NewProjectFromVideoFile : class Microsoft.Research.Hyperlapse.Project(string)
+   |   |   |___[MET] OpenProject : class Microsoft.Research.Hyperlapse.Project(string)
+   |   |   |___[MET] SaveProject : void(class Microsoft.Research.Hyperlapse.Project,string)
+   |   |
+   |   |___[CLS] Microsoft.Research.Hyperlapse.RecentProjectViewModel
+   |   |   |     .class public auto ansi beforefieldinit 
+   |   |   |      extends [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Notifier 
+   |   |   |___[FLD] <CreatedDate>k__BackingField : private string
+   |   |   |___[FLD] <Name>k__BackingField : private string
+   |   |   |___[FLD] <Thumbnail>k__BackingField : private class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.IImageHandle
+   |   |   |___[MET] .ctor : void(string,valuetype [mscorlib]System.DateTime)
+   |   |   |___[MET] get_CreatedDate : string()
+   |   |   |___[MET] get_Name : string()
+   |   |   |___[MET] get_Thumbnail : class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.IImageHandle()
+   |   |   |___[MET] set_CreatedDate : void(string)
+   |   |   |___[MET] set_Name : void(string)
+   |   |   |___[MET] set_Thumbnail : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.IImageHandle)
+   |   |   |___[PTY] CreatedDate : instance string()
+   |   |   |___[PTY] Name : instance string()
+   |   |   |___[PTY] Thumbnail : instance class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.IImageHandle()
+   |   |
+   |   |___[CLS] Microsoft.Research.Hyperlapse.ResourceCalibration
+   |   |   |     .class public auto ansi beforefieldinit 
+   |   |   |      extends Microsoft.Research.Hyperlapse.Calibration 
+   |   |   |     .ctor : void(int32,string,class [mscorlib]System.Collections.Generic.List`1<string>,string,string)
+   |   |   |___[MET] ExtractToFolder : string(string)
+   |   |
+   |   |___[CLS] Microsoft.Research.Hyperlapse.ScratchManager
+   |   |   |     .class public auto ansi beforefieldinit 
+   |   |   |___[CLS] <>c__DisplayClass3
+   |   |   |   |     .class nested private auto ansi sealed beforefieldinit 
+   |   |   |   |     .custom instance void [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() = ( 01 00 00 00 )  ...
+   |   |   |   |___[FLD] pid : public int32
+   |   |   |   |___[MET] .ctor : void()
+   |   |   |   |     <DetectAndHandleUncleanShutdown>b__1 : bool(class [System]System.Diagnostics.Process)
+   |   |   |
+   |   |   |___[FLD] CacheDirectory : private initonly string
+   |   |   |___[FLD] ScrathRootSettingsKey : private initonly string
+   |   |   |___[FLD] SessionIdFileName : private initonly string
+   |   |   |___[FLD] freeSpaceProvider : private class Microsoft.Research.Hyperlapse.IFreeSpaceProvider
+   |   |   |___[FLD] processId : private string
+   |   |   |___[FLD] settingsStore : private class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.ISettingsStore
+   |   |   |___[FLD] telemetryClient : private class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.ITelemetryClient
+   |   |   |___[FLD] tempPathProvider : private class Microsoft.Research.Hyperlapse.ITempPathProvider
+   |   |   |___[MET] .ctor : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.ITelemetryClient,class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.ISettingsStore,class Microsoft.Research.Hyperlapse.IFreeSpaceProvider,class Microsoft.Research.Hyperlapse.ITempPathProvider)
+   |   |   |___[MET] CheckDirectoryIsWriteable : void(string)
+   |   |   |___[MET] DetectAndHandleUncleanShutdown : void()
+   |   |   |___[MET] EnsureDirectoryExists : void(string)
+   |   |   |___[MET] GetCacheDirectory : string()
+   |   |   |___[MET] GetCurrentScratchDirectory : string()
+   |   |   |___[MET] GetDefaultScratchRoot : string()
+   |   |   |___[MET] GetFreeScratchBytes : uint64()
+   |   |   |___[MET] GetNewWorkingDirectory : string()
+   |   |   |     GetScratchSizeInfo : class [mscorlib]System.Tuple`2<uint64,uint64>()
+   |   |   |___[MET] GetTotalScratchBytes : uint64()
+   |   |   |___[MET] InitializeScratchSpace : void()
+   |   |   |___[MET] ResetScratchRoot : void()
+   |   |   |___[MET] TeardownScratchSpace : void()
+   |   |   |___[MET] TeardownScratchSpace : void(string)
+   |   |   |___[MET] UpdateScratchRoot : void(string)
+   |   |   |___[MET] get_ExpandedScratchRoot : string()
+   |   |   |___[MET] get_ScratchRoot : string()
+   |   |   |___[MET] set_ScratchRoot : void(string)
+   |   |   |___[PTY] ExpandedScratchRoot : instance string()
+   |   |   |___[PTY] ScratchRoot : instance string()
+   |   |
+   |   |___[CLS] Microsoft.Research.Hyperlapse.SettingsViewModel
+   |   |   |     .class public auto ansi beforefieldinit 
+   |   |   |      extends [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.ViewModel 
+   |   |   |___[CLS] <>c__DisplayClass5
+   |   |   |   |     .class nested private auto ansi sealed beforefieldinit 
+   |   |   |   |     .custom instance void [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() = ( 01 00 00 00 )  ...
+   |   |   |   |___[FLD] <>4__this : public class Microsoft.Research.Hyperlapse.SettingsViewModel
+   |   |   |   |___[FLD] value : public string
+   |   |   |   |___[MET] .ctor : void()
+   |   |   |   |     <set_CalibrationFile>b__3 : bool(class Microsoft.Research.Hyperlapse.Calibration)
+   |   |   |
+   |   |   |___[VCL] <GoToProcess>d__9
+   |   |   |   |     .class value nested private auto ansi sealed beforefieldinit 
+   |   |   |   |      extends [mscorlib]System.ValueType 
+   |   |   |   |      implements [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine 
+   |   |   |   |     .custom instance void [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() = ( 01 00 00 00 )  ...
+   |   |   |   |___[FLD] <>1__state : public int32
+   |   |   |   |___[FLD] <>4__this : public class Microsoft.Research.Hyperlapse.SettingsViewModel
+   |   |   |   |___[FLD] <>t__builder : public valuetype [mscorlib]System.Runtime.CompilerServices.AsyncTaskMethodBuilder
+   |   |   |   |___[FLD] <>t__stack : private object
+   |   |   |   |___[FLD] <>u__$awaiterb : private valuetype [mscorlib]System.Runtime.CompilerServices.TaskAwaiter`1<bool>
+   |   |   |   |___[FLD] <confirmOverwrite>5__a : public bool
+   |   |   |   |___[MET] MoveNext : void()
+   |   |   |   |___[MET] SetStateMachine : void(class [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine)
+   |   |   |
+   |   |   |___[FLD] <NavigationViewModel>k__BackingField : private class Microsoft.Research.Hyperlapse.NavigationViewModel
+   |   |   |___[FLD] <NextCommand>k__BackingField : private class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.AsyncCommand
+   |   |   |___[STF] CS$<>9__CachedAnonymousMethodDelegate2 : private static class [mscorlib]System.Func`2<class Microsoft.Research.Hyperlapse.Calibration,string>
+   |   |   |___[FLD] activationManager : private class Microsoft.Research.Hyperlapse.ActivationManager
+   |   |   |___[FLD] calibrationProvider : private class Microsoft.Research.Hyperlapse.CalibrationProvider
+   |   |   |___[FLD] processTimeEstimator : private class Microsoft.Research.Hyperlapse.ProcessingTimeEstimator
+   |   |   |___[FLD] project : private class Microsoft.Research.Hyperlapse.Project
+   |   |   |___[MET] .ctor : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.INavigation,class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.IUserInterface,class Microsoft.Research.Hyperlapse.CalibrationProvider,class Microsoft.Research.Hyperlapse.ActivationManager)
+   |   |   |     <.ctor>b__7 : bool()
+   |   |   |     <get_CalibrationFiles>b__1 : string(class Microsoft.Research.Hyperlapse.Calibration)
+   |   |   |___[MET] GoToProcess : class [mscorlib]System.Threading.Tasks.Task()
+   |   |   |___[MET] OnNavigatedTo : void(object[])
+   |   |   |___[MET] SwapSizeIfRotated : class Microsoft.Research.Hyperlapse.Size(class Microsoft.Research.Hyperlapse.Size)
+   |   |   |     get_AvailableFrameRates : class [mscorlib]System.Collections.Generic.List`1<class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Rational>()
+   |   |   |     get_AvailableOutputSizes : class [mscorlib]System.Collections.Generic.List`1<class Microsoft.Research.Hyperlapse.Size>()
+   |   |   |___[MET] get_CalibrationFile : string()
+   |   |   |     get_CalibrationFiles : class [mscorlib]System.Collections.Generic.List`1<string>()
+   |   |   |___[MET] get_CalibrationHousingOn : bool()
+   |   |   |___[MET] get_CalibrationSupportsHousing : bool()
+   |   |   |___[MET] get_EstimatedProcessingTime : valuetype [mscorlib]System.TimeSpan()
+   |   |   |___[MET] get_FrameRate : class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Rational()
+   |   |   |___[MET] get_FrameTime : valuetype [mscorlib]System.TimeSpan()
+   |   |   |___[MET] get_IncludeEndCredit : bool()
+   |   |   |___[MET] get_IncludeEndCreditSettingIsEnabled : bool()
+   |   |   |___[MET] get_IsCalibrationFileManual : bool()
+   |   |   |___[MET] get_NavigationViewModel : class Microsoft.Research.Hyperlapse.NavigationViewModel()
+   |   |   |___[MET] get_NextCommand : class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.AsyncCommand()
+   |   |   |___[MET] get_OriginalInputLength : valuetype [mscorlib]System.TimeSpan()
+   |   |   |___[MET] get_OutputLength : valuetype [mscorlib]System.TimeSpan()
+   |   |   |___[MET] get_OutputLocation : string()
+   |   |   |___[MET] get_OutputSize : class Microsoft.Research.Hyperlapse.Size()
+   |   |   |___[MET] get_RotationAmount : float64()
+   |   |   |___[MET] get_SpeedUpFactor : int32()
+   |   |   |___[MET] get_TrimmedInputLength : valuetype [mscorlib]System.TimeSpan()
+   |   |   |___[MET] get_UseAdvancedSmoothing : bool()
+   |   |   |___[MET] get_UseAdvancedSmoothingSettingEnabled : bool()
+   |   |   |___[MET] get_VideoFile : class [System]System.Uri()
+   |   |   |___[MET] get_VideoMode : string()
+   |   |   |     get_VideoModes : class [mscorlib]System.Collections.Generic.List`1<string>()
+   |   |   |___[MET] set_CalibrationFile : void(string)
+   |   |   |___[MET] set_CalibrationHousingOn : void(bool)
+   |   |   |___[MET] set_FrameRate : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Rational)
+   |   |   |___[MET] set_IncludeEndCredit : void(bool)
+   |   |   |___[MET] set_NavigationViewModel : void(class Microsoft.Research.Hyperlapse.NavigationViewModel)
+   |   |   |___[MET] set_NextCommand : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.AsyncCommand)
+   |   |   |___[MET] set_OutputLocation : void(string)
+   |   |   |___[MET] set_OutputSize : void(class Microsoft.Research.Hyperlapse.Size)
+   |   |   |___[MET] set_SpeedUpFactor : void(int32)
+   |   |   |___[MET] set_UseAdvancedSmoothing : void(bool)
+   |   |   |___[MET] set_VideoMode : void(string)
+   |   |   |___[PTY] AvailableFrameRates : instance class [mscorlib]System.Collections.Generic.List`1<class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Rational>()
+   |   |   |___[PTY] AvailableOutputSizes : instance class [mscorlib]System.Collections.Generic.List`1<class Microsoft.Research.Hyperlapse.Size>()
+   |   |   |___[PTY] CalibrationFile : instance string()
+   |   |   |___[PTY] CalibrationFiles : instance class [mscorlib]System.Collections.Generic.List`1<string>()
+   |   |   |___[PTY] CalibrationHousingOn : instance bool()
+   |   |   |___[PTY] CalibrationSupportsHousing : instance bool()
+   |   |   |___[PTY] EstimatedProcessingTime : instance valuetype [mscorlib]System.TimeSpan()
+   |   |   |___[PTY] FrameRate : instance class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Rational()
+   |   |   |___[PTY] FrameTime : instance valuetype [mscorlib]System.TimeSpan()
+   |   |   |___[PTY] IncludeEndCredit : instance bool()
+   |   |   |___[PTY] IncludeEndCreditSettingIsEnabled : instance bool()
+   |   |   |___[PTY] IsCalibrationFileManual : instance bool()
+   |   |   |___[PTY] NavigationViewModel : instance class Microsoft.Research.Hyperlapse.NavigationViewModel()
+   |   |   |___[PTY] NextCommand : instance class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.AsyncCommand()
+   |   |   |___[PTY] OriginalInputLength : instance valuetype [mscorlib]System.TimeSpan()
+   |   |   |___[PTY] OutputLength : instance valuetype [mscorlib]System.TimeSpan()
+   |   |   |___[PTY] OutputLocation : instance string()
+   |   |   |___[PTY] OutputSize : instance class Microsoft.Research.Hyperlapse.Size()
+   |   |   |___[PTY] RotationAmount : instance float64()
+   |   |   |___[PTY] SpeedUpFactor : instance int32()
+   |   |   |___[PTY] TrimmedInputLength : instance valuetype [mscorlib]System.TimeSpan()
+   |   |   |___[PTY] UseAdvancedSmoothing : instance bool()
+   |   |   |___[PTY] UseAdvancedSmoothingSettingEnabled : instance bool()
+   |   |   |___[PTY] VideoFile : instance class [System]System.Uri()
+   |   |   |___[PTY] VideoMode : instance string()
+   |   |   |___[PTY] VideoModes : instance class [mscorlib]System.Collections.Generic.List`1<string>()
+   |   |
+   |   |___[CLS] Microsoft.Research.Hyperlapse.Size
+   |   |   |     .class public auto ansi serializable beforefieldinit 
+   |   |   |___[FLD] <Height>k__BackingField : private float64
+   |   |   |___[FLD] <Width>k__BackingField : private float64
+   |   |   |___[MET] .ctor : void()
+   |   |   |___[MET] .ctor : void(float64,float64)
+   |   |   |___[MET] Equals : bool(object)
+   |   |   |___[MET] GetHashCode : int32()
+   |   |   |___[MET] SwapDimensions : class Microsoft.Research.Hyperlapse.Size()
+   |   |   |___[MET] get_Height : float64()
+   |   |   |___[MET] get_Width : float64()
+   |   |   |___[MET] set_Height : void(float64)
+   |   |   |___[MET] set_Width : void(float64)
+   |   |   |___[PTY] Height : instance float64()
+   |   |   |___[PTY] Width : instance float64()
+   |   |
+   |   |___[CLS] Microsoft.Research.Hyperlapse.SourceFileViewModel
+   |   |   |     .class public auto ansi beforefieldinit 
+   |   |   |___[FLD] <FileName>k__BackingField : private string
+   |   |   |___[FLD] <Thumbnail>k__BackingField : private class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.IImageHandle
+   |   |   |___[MET] .ctor : void(string)
+   |   |   |___[MET] get_FileName : string()
+   |   |   |___[MET] get_Name : string()
+   |   |   |___[MET] get_Thumbnail : class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.IImageHandle()
+   |   |   |___[MET] set_FileName : void(string)
+   |   |   |___[MET] set_Thumbnail : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.IImageHandle)
+   |   |   |___[PTY] FileName : instance string()
+   |   |   |___[PTY] Name : instance string()
+   |   |   |___[PTY] Thumbnail : instance class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.IImageHandle()
+   |   |
+   |   |___[CLS] Microsoft.Research.Hyperlapse.StartPageViewModel
+   |   |   |     .class public auto ansi beforefieldinit 
+   |   |   |      extends [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.ViewModel 
+   |   |   |___[VCL] <<OnNavigatedTo>b__2>d__5
+   |   |   |   |     .class value nested private auto ansi sealed beforefieldinit 
+   |   |   |   |      extends [mscorlib]System.ValueType 
+   |   |   |   |      implements [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine 
+   |   |   |   |     .custom instance void [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() = ( 01 00 00 00 )  ...
+   |   |   |   |___[FLD] <>1__state : public int32
+   |   |   |   |___[FLD] <>4__this : public class Microsoft.Research.Hyperlapse.StartPageViewModel
+   |   |   |   |___[FLD] <>t__builder : public valuetype [mscorlib]System.Runtime.CompilerServices.AsyncTaskMethodBuilder
+   |   |   |   |___[FLD] <>t__stack : private object
+   |   |   |   |___[FLD] <>u__$awaiter6 : private valuetype [mscorlib]System.Runtime.CompilerServices.TaskAwaiter
+   |   |   |   |___[MET] MoveNext : void()
+   |   |   |   |___[MET] SetStateMachine : void(class [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine)
+   |   |   |
+   |   |   |___[CLS] <>c__DisplayClass3
+   |   |   |   |     .class nested private auto ansi sealed beforefieldinit 
+   |   |   |   |     .custom instance void [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() = ( 01 00 00 00 )  ...
+   |   |   |   |___[FLD] <>4__this : public class Microsoft.Research.Hyperlapse.StartPageViewModel
+   |   |   |   |___[FLD] args : public object[]
+   |   |   |   |___[MET] .ctor : void()
+   |   |   |   |     <OnNavigatedTo>b__1 : void()
+   |   |   |
+   |   |   |___[VCL] <CheckForUpdate>d__9
+   |   |   |   |     .class value nested private auto ansi sealed beforefieldinit 
+   |   |   |   |      extends [mscorlib]System.ValueType 
+   |   |   |   |      implements [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine 
+   |   |   |   |     .custom instance void [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() = ( 01 00 00 00 )  ...
+   |   |   |   |___[FLD] <>1__state : public int32
+   |   |   |   |___[FLD] <>4__this : public class Microsoft.Research.Hyperlapse.StartPageViewModel
+   |   |   |   |___[FLD] <>t__builder : public valuetype [mscorlib]System.Runtime.CompilerServices.AsyncTaskMethodBuilder
+   |   |   |   |___[FLD] <>t__stack : private object
+   |   |   |   |___[FLD] <>u__$awaiterc : private valuetype [mscorlib]System.Runtime.CompilerServices.TaskAwaiter`1<string>
+   |   |   |   |___[FLD] <>u__$awaiterd : private valuetype [mscorlib]System.Runtime.CompilerServices.TaskAwaiter`1<bool>
+   |   |   |   |___[FLD] <confirm>5__b : public bool
+   |   |   |   |___[FLD] <msiLink>5__a : public string
+   |   |   |   |___[FLD] overrideDisabledCheck : public bool
+   |   |   |   |___[MET] MoveNext : void()
+   |   |   |   |___[MET] SetStateMachine : void(class [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine)
+   |   |   |
+   |   |   |___[FLD] <AdClickedCommand>k__BackingField : private class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command`1<class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.AdvertisementViewModel>
+   |   |   |___[FLD] <CheckForFileArgumentCommand>k__BackingField : private class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command
+   |   |   |___[FLD] <CheckForUpdateCommand>k__BackingField : private class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.AsyncCommand
+   |   |   |___[FLD] <WindowOperationsVM>k__BackingField : private class Microsoft.Research.Hyperlapse.WindowOperationsViewModel
+   |   |   |___[FLD] advertisingModel : private class Microsoft.Research.Hyperlapse.IAdvertisingModel
+   |   |   |___[FLD] hasNavigated : private bool
+   |   |   |___[FLD] updateChecker : private class Microsoft.Research.Hyperlapse.UpdateChecker
+   |   |   |___[MET] .ctor : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.INavigation,class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.IUserInterface,class Microsoft.Research.Hyperlapse.WindowOperationsViewModel,class Microsoft.Research.Hyperlapse.UpdateChecker,class Microsoft.Research.Hyperlapse.IAdvertisingModel)
+   |   |   |     <OnNavigatedTo>b__0 : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.AdvertisementViewModel)
+   |   |   |     <OnNavigatedTo>b__2 : class [mscorlib]System.Threading.Tasks.Task()
+   |   |   |___[MET] AdClicked : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.AdvertisementViewModel)
+   |   |   |___[MET] CheckForUpdate : class [mscorlib]System.Threading.Tasks.Task(bool)
+   |   |   |___[MET] HandleLaunchArgs : void(object[])
+   |   |   |___[MET] OnNavigatedTo : void(object[])
+   |   |   |     get_AdClickedCommand : class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command`1<class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.AdvertisementViewModel>()
+   |   |   |___[MET] get_Advertising : class Microsoft.Research.Hyperlapse.IAdvertisingModel()
+   |   |   |___[MET] get_CheckForFileArgumentCommand : class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command()
+   |   |   |___[MET] get_CheckForUpdateCommand : class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.AsyncCommand()
+   |   |   |___[MET] get_UserInterface : class Microsoft.Research.Hyperlapse.IHyperlapseUserInterface()
+   |   |   |___[MET] get_WindowOperationsVM : class Microsoft.Research.Hyperlapse.WindowOperationsViewModel()
+   |   |   |     set_AdClickedCommand : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command`1<class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.AdvertisementViewModel>)
+   |   |   |___[MET] set_CheckForFileArgumentCommand : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command)
+   |   |   |___[MET] set_CheckForUpdateCommand : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.AsyncCommand)
+   |   |   |___[MET] set_WindowOperationsVM : void(class Microsoft.Research.Hyperlapse.WindowOperationsViewModel)
+   |   |   |___[PTY] AdClickedCommand : instance class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command`1<class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.AdvertisementViewModel>()
+   |   |   |___[PTY] Advertising : instance class Microsoft.Research.Hyperlapse.IAdvertisingModel()
+   |   |   |___[PTY] CheckForFileArgumentCommand : instance class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command()
+   |   |   |___[PTY] CheckForUpdateCommand : instance class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.AsyncCommand()
+   |   |   |___[PTY] UserInterface : instance class Microsoft.Research.Hyperlapse.IHyperlapseUserInterface()
+   |   |   |___[PTY] WindowOperationsVM : instance class Microsoft.Research.Hyperlapse.WindowOperationsViewModel()
+   |   |
+   |   |___[CLS] Microsoft.Research.Hyperlapse.UnknownCalibration
+   |   |   |     .class public auto ansi beforefieldinit 
+   |   |   |      extends Microsoft.Research.Hyperlapse.Calibration 
+   |   |   |___[MET] .ctor : void()
+   |   |   |___[MET] ExtractToFolder : string(string)
+   |   |
+   |   |___[CLS] Microsoft.Research.Hyperlapse.UpdateChecker
+   |   |   |     .class public auto ansi beforefieldinit 
+   |   |   |___[VCL] <CheckForUpgradeAsync>d__1
+   |   |   |   |     .class value nested private auto ansi sealed beforefieldinit 
+   |   |   |   |      extends [mscorlib]System.ValueType 
+   |   |   |   |      implements [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine 
+   |   |   |   |     .custom instance void [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() = ( 01 00 00 00 )  ...
+   |   |   |   |___[FLD] <>1__state : public int32
+   |   |   |   |___[FLD] <>4__this : public class Microsoft.Research.Hyperlapse.UpdateChecker
+   |   |   |   |___[FLD] <>t__builder : public valuetype [mscorlib]System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<string>
+   |   |   |   |___[FLD] <>t__stack : private object
+   |   |   |   |___[FLD] <>u__$awaiterb : private valuetype [mscorlib]System.Runtime.CompilerServices.TaskAwaiter`1<string>
+   |   |   |   |___[FLD] <currentVersion>5__4 : public class [mscorlib]System.Version
+   |   |   |   |___[FLD] <devVersion>5__3 : public class [mscorlib]System.Version
+   |   |   |   |___[FLD] <installerLink>5__2 : public string
+   |   |   |   |___[FLD] <isDevVersion>5__5 : public bool
+   |   |   |   |___[FLD] <linkNode>5__a : public class [System.Xml]System.Xml.XmlNode
+   |   |   |   |___[FLD] <productNode>5__8 : public class [System.Xml]System.Xml.XmlNode
+   |   |   |   |___[FLD] <text>5__6 : public string
+   |   |   |   |___[FLD] <versionNode>5__9 : public class [System.Xml]System.Xml.XmlNode
+   |   |   |   |___[FLD] <xmlDoc>5__7 : public class [System.Xml]System.Xml.XmlDocument
+   |   |   |   |___[FLD] overrideDisabledCheck : public bool
+   |   |   |   |___[MET] MoveNext : void()
+   |   |   |   |___[MET] SetStateMachine : void(class [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine)
+   |   |   |
+   |   |   |___[FLD] IsUpdateCheckEnabledSettingsKey : private initonly string
+   |   |   |___[FLD] VersionLink : private initonly string
+   |   |   |___[FLD] productInfo : private class Microsoft.Research.Hyperlapse.ProductInfo
+   |   |   |___[FLD] settings : private class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.ISettingsStore
+   |   |   |___[FLD] webClient : private class [System]System.Net.WebClient
+   |   |   |___[MET] .ctor : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.ISettingsStore,class Microsoft.Research.Hyperlapse.ProductInfo)
+   |   |   |___[MET] Cancel : void()
+   |   |   |     CheckForUpgradeAsync : class [mscorlib]System.Threading.Tasks.Task`1<string>(bool)
+   |   |   |___[MET] LoadAsXml : class [System.Xml]System.Xml.XmlDocument(string)
+   |   |   |___[MET] get_IsUpdateCheckEnabled : bool()
+   |   |   |___[MET] set_IsUpdateCheckEnabled : void(bool)
+   |   |   |___[PTY] IsUpdateCheckEnabled : instance bool()
+   |   |
+   |   |___[CLS] Microsoft.Research.Hyperlapse.UpgradeViewModel
+   |   |   |     .class public auto ansi beforefieldinit 
+   |   |   |      extends [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.ViewModel 
+   |   |   |___[FLD] <ActivateProductCommand>k__BackingField : private class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command
+   |   |   |___[FLD] <BuyProductCommand>k__BackingField : private class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command
+   |   |   |___[FLD] <ErrorCode>k__BackingField : private int32
+   |   |   |___[FLD] <OpenWin7FixLinkCommand>k__BackingField : private class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command
+   |   |   |___[FLD] activationChecker : private class Microsoft.Research.Hyperlapse.ActivationManager
+   |   |   |___[FLD] didActivate : private bool
+   |   |   |___[FLD] productInfo : private class Microsoft.Research.Hyperlapse.ProductInfo
+   |   |   |___[FLD] productKey : private string
+   |   |   |___[MET] .ctor : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.INavigation,class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.IUserInterface,class Microsoft.Research.Hyperlapse.ActivationManager,class Microsoft.Research.Hyperlapse.ProductInfo)
+   |   |   |     <.ctor>b__0 : bool()
+   |   |   |___[MET] ActivateProduct : void()
+   |   |   |___[MET] BuyProduct : void()
+   |   |   |___[MET] OnNavigatedFrom : void()
+   |   |   |___[MET] OpenWin7FixLink : void()
+   |   |   |___[MET] get_ActivateProductCommand : class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command()
+   |   |   |___[MET] get_ApplicationName : string()
+   |   |   |___[MET] get_BuyProductCommand : class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command()
+   |   |   |___[MET] get_ErrorCode : int32()
+   |   |   |___[MET] get_IsActivationError : bool()
+   |   |   |___[MET] get_IsValidKey : bool()
+   |   |   |___[MET] get_OpenWin7FixLinkCommand : class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command()
+   |   |   |___[MET] get_ProductKey : string()
+   |   |   |___[MET] get_SupportsBuyOnline : bool()
+   |   |   |___[MET] set_ActivateProductCommand : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command)
+   |   |   |___[MET] set_BuyProductCommand : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command)
+   |   |   |___[MET] set_ErrorCode : void(int32)
+   |   |   |___[MET] set_OpenWin7FixLinkCommand : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command)
+   |   |   |___[MET] set_ProductKey : void(string)
+   |   |   |___[PTY] ActivateProductCommand : instance class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command()
+   |   |   |___[PTY] ApplicationName : instance string()
+   |   |   |___[PTY] BuyProductCommand : instance class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command()
+   |   |   |___[PTY] ErrorCode : instance int32()
+   |   |   |___[PTY] IsActivationError : instance bool()
+   |   |   |___[PTY] IsValidKey : instance bool()
+   |   |   |___[PTY] OpenWin7FixLinkCommand : instance class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command()
+   |   |   |___[PTY] ProductKey : instance string()
+   |   |   |___[PTY] SupportsBuyOnline : instance bool()
+   |   |
+   |   |___[CLS] Microsoft.Research.Hyperlapse.VideoBitrateEstimator
+   |   |   |     .class public auto ansi beforefieldinit 
+   |   |   |___[STF] Mbps : private static float64
+   |   |   |___[FLD] h264LevelLimits : private float64[0...,0...]
+   |   |   |___[STF] kbps : private static float64
+   |   |   |___[STM] .cctor : void()
+   |   |   |___[MET] .ctor : void()
+   |   |   |___[MET] ComputeMaxBitsPerSecond : float64(float64,float64,class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Rational)
+   |   |   |___[MET] EstimateBitsPerSecond : float64(float64,float64,float64,float64,float64,class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Rational,class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Rational)
+   |   |
+   |   |___[CLS] Microsoft.Research.Hyperlapse.VideoFormatTester
+   |   |   |     .class public auto ansi beforefieldinit 
+   |   |   |___[FLD] accelerationOptions : private class Microsoft.Research.Hyperlapse.AccelerationOptions
+   |   |   |___[FLD] frameRatesCache : private class [mscorlib]System.Collections.Generic.Dictionary`2<class [mscorlib]System.Tuple`7<int32,int32,float64,class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Rational,int32,int32,bool>,class [mscorlib]System.Collections.Generic.List`1<class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Rational>>
+   |   |   |___[FLD] sizesCache : private class [mscorlib]System.Collections.Generic.Dictionary`2<class [mscorlib]System.Tuple`6<int32,int32,float64,class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Rational,class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Rational,bool>,class [mscorlib]System.Collections.Generic.List`1<class Microsoft.Research.Hyperlapse.Size>>
+   |   |   |___[FLD] videoBitrateEstimator : private class Microsoft.Research.Hyperlapse.VideoBitrateEstimator
+   |   |   |___[FLD] videoTestWriter : private class Microsoft.Research.Hyperlapse.IVideoTestWriter
+   |   |   |___[MET] .ctor : void(class Microsoft.Research.Hyperlapse.VideoBitrateEstimator,class Microsoft.Research.Hyperlapse.AccelerationOptions,class Microsoft.Research.Hyperlapse.IVideoTestWriter)
+   |   |   |___[MET] ConformsToH264Level5_1 : bool(int32,int32,class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Rational)
+   |   |   |     GetAvailableOutputSizes : class [mscorlib]System.Collections.Generic.List`1<class Microsoft.Research.Hyperlapse.Size>(string,int32,int32,float64,class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Rational,class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Rational)
+   |   |   |     GetAvailabledOutputFrameRates : class [mscorlib]System.Collections.Generic.List`1<class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Rational>(string,int32,int32,float64,class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Rational,int32,int32)
+   |   |   |     GetDefaultOutputSize : class Microsoft.Research.Hyperlapse.Size(class [mscorlib]System.Collections.Generic.List`1<class Microsoft.Research.Hyperlapse.Size>,int32,int32)
+   |   |
+   |   |___[CLS] Microsoft.Research.Hyperlapse.VideoInfo
+   |   |   |     .class public auto ansi beforefieldinit 
+   |   |   |___[FLD] <BitsPerSecond>k__BackingField : private float64
+   |   |   |___[FLD] <CameraModel>k__BackingField : private int32
+   |   |   |___[FLD] <Duration>k__BackingField : private valuetype [mscorlib]System.TimeSpan
+   |   |   |___[FLD] <Filename>k__BackingField : private class [System]System.Uri
+   |   |   |___[FLD] <FramesPerSecond>k__BackingField : private class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Rational
+   |   |   |___[FLD] <Height>k__BackingField : private int32
+   |   |   |___[FLD] <OriginalBitsPerSecond>k__BackingField : private float64
+   |   |   |___[FLD] <Rotation>k__BackingField : private int32
+   |   |   |___[FLD] <VideoMode>k__BackingField : private string
+   |   |   |___[FLD] <Width>k__BackingField : private int32
+   |   |   |___[MET] .ctor : void()
+   |   |   |___[MET] get_BitsPerSecond : float64()
+   |   |   |___[MET] get_CameraModel : int32()
+   |   |   |___[MET] get_Duration : valuetype [mscorlib]System.TimeSpan()
+   |   |   |___[MET] get_Filename : class [System]System.Uri()
+   |   |   |___[MET] get_FramesPerSecond : class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Rational()
+   |   |   |___[MET] get_Height : int32()
+   |   |   |___[MET] get_OriginalBitsPerSecond : float64()
+   |   |   |___[MET] get_Rotation : int32()
+   |   |   |___[MET] get_VideoMode : string()
+   |   |   |___[MET] get_Width : int32()
+   |   |   |___[MET] set_BitsPerSecond : void(float64)
+   |   |   |___[MET] set_CameraModel : void(int32)
+   |   |   |___[MET] set_Duration : void(valuetype [mscorlib]System.TimeSpan)
+   |   |   |___[MET] set_Filename : void(class [System]System.Uri)
+   |   |   |___[MET] set_FramesPerSecond : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Rational)
+   |   |   |___[MET] set_Height : void(int32)
+   |   |   |___[MET] set_OriginalBitsPerSecond : void(float64)
+   |   |   |___[MET] set_Rotation : void(int32)
+   |   |   |___[MET] set_VideoMode : void(string)
+   |   |   |___[MET] set_Width : void(int32)
+   |   |   |___[PTY] BitsPerSecond : instance float64()
+   |   |   |___[PTY] CameraModel : instance int32()
+   |   |   |___[PTY] Duration : instance valuetype [mscorlib]System.TimeSpan()
+   |   |   |___[PTY] Filename : instance class [System]System.Uri()
+   |   |   |___[PTY] FramesPerSecond : instance class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Rational()
+   |   |   |___[PTY] Height : instance int32()
+   |   |   |___[PTY] OriginalBitsPerSecond : instance float64()
+   |   |   |___[PTY] Rotation : instance int32()
+   |   |   |___[PTY] VideoMode : instance string()
+   |   |   |___[PTY] Width : instance int32()
+   |   |
+   |   |___[CLS] Microsoft.Research.Hyperlapse.VideoReaderException
+   |   |   |     .class public auto ansi beforefieldinit 
+   |   |   |      extends [mscorlib]System.Exception 
+   |   |   |___[MET] .ctor : void(string)
+   |   |
+   |   |___[CLS] Microsoft.Research.Hyperlapse.WindowOperationsViewModel
+   |   |   |     .class public auto ansi beforefieldinit 
+   |   |   |      extends [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.ViewModel 
+   |   |   |___[VCL] <CheckForUnsavedChanges>d__33
+   |   |   |   |     .class value nested private auto ansi sealed beforefieldinit 
+   |   |   |   |      extends [mscorlib]System.ValueType 
+   |   |   |   |      implements [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine 
+   |   |   |   |     .custom instance void [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() = ( 01 00 00 00 )  ...
+   |   |   |   |___[FLD] <>1__state : public int32
+   |   |   |   |___[FLD] <>4__this : public class Microsoft.Research.Hyperlapse.WindowOperationsViewModel
+   |   |   |   |___[FLD] <>t__builder : public valuetype [mscorlib]System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<bool>
+   |   |   |   |___[FLD] <>t__stack : private object
+   |   |   |   |___[FLD] <>u__$awaiter36 : private valuetype [mscorlib]System.Runtime.CompilerServices.TaskAwaiter`1<valuetype Microsoft.Research.Hyperlapse.HyperlapseDialogResult>
+   |   |   |   |___[FLD] <>u__$awaiter37 : private valuetype [mscorlib]System.Runtime.CompilerServices.TaskAwaiter`1<bool>
+   |   |   |   |___[FLD] <cancelled>5__34 : public bool
+   |   |   |   |___[FLD] <confirm>5__35 : public valuetype Microsoft.Research.Hyperlapse.HyperlapseDialogResult
+   |   |   |   |___[MET] MoveNext : void()
+   |   |   |   |___[MET] SetStateMachine : void(class [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine)
+   |   |   |
+   |   |   |___[VCL] <CloseProject>d__2f
+   |   |   |   |     .class value nested private auto ansi sealed beforefieldinit 
+   |   |   |   |      extends [mscorlib]System.ValueType 
+   |   |   |   |      implements [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine 
+   |   |   |   |     .custom instance void [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() = ( 01 00 00 00 )  ...
+   |   |   |   |___[FLD] <>1__state : public int32
+   |   |   |   |___[FLD] <>4__this : public class Microsoft.Research.Hyperlapse.WindowOperationsViewModel
+   |   |   |   |___[FLD] <>t__builder : public valuetype [mscorlib]System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<bool>
+   |   |   |   |___[FLD] <>t__stack : private object
+   |   |   |   |___[FLD] <>u__$awaiter31 : private valuetype [mscorlib]System.Runtime.CompilerServices.TaskAwaiter`1<bool>
+   |   |   |   |___[FLD] <cancelled>5__30 : public bool
+   |   |   |   |___[FLD] checkForUnsavedChanges : public bool
+   |   |   |   |___[MET] MoveNext : void()
+   |   |   |   |___[MET] SetStateMachine : void(class [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine)
+   |   |   |
+   |   |   |___[VCL] <HandleFile>d__17
+   |   |   |   |     .class value nested private auto ansi sealed beforefieldinit 
+   |   |   |   |      extends [mscorlib]System.ValueType 
+   |   |   |   |      implements [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine 
+   |   |   |   |     .custom instance void [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() = ( 01 00 00 00 )  ...
+   |   |   |   |___[FLD] <>1__state : public int32
+   |   |   |   |___[FLD] <>4__this : public class Microsoft.Research.Hyperlapse.WindowOperationsViewModel
+   |   |   |   |___[FLD] <>t__builder : public valuetype [mscorlib]System.Runtime.CompilerServices.AsyncTaskMethodBuilder
+   |   |   |   |___[FLD] <>t__stack : private object
+   |   |   |   |___[FLD] <>u__$awaiter19 : private valuetype [mscorlib]System.Runtime.CompilerServices.TaskAwaiter
+   |   |   |   |___[FLD] <extension>5__18 : public string
+   |   |   |   |___[FLD] filename : public string
+   |   |   |   |___[MET] MoveNext : void()
+   |   |   |   |___[MET] SetStateMachine : void(class [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine)
+   |   |   |
+   |   |   |___[VCL] <NewProject>d__1c
+   |   |   |   |     .class value nested private auto ansi sealed beforefieldinit 
+   |   |   |   |      extends [mscorlib]System.ValueType 
+   |   |   |   |      implements [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine 
+   |   |   |   |     .custom instance void [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() = ( 01 00 00 00 )  ...
+   |   |   |   |___[FLD] <>1__state : public int32
+   |   |   |   |___[FLD] <>4__this : public class Microsoft.Research.Hyperlapse.WindowOperationsViewModel
+   |   |   |   |___[FLD] <>g__initLocal1b : public class [mscorlib]System.Collections.Generic.Dictionary`2<string,object>
+   |   |   |   |___[FLD] <>t__builder : public valuetype [mscorlib]System.Runtime.CompilerServices.AsyncTaskMethodBuilder
+   |   |   |   |___[FLD] <>t__stack : private object
+   |   |   |   |___[FLD] <>u__$awaiter1f : private valuetype [mscorlib]System.Runtime.CompilerServices.TaskAwaiter`1<bool>
+   |   |   |   |___[FLD] <>u__$awaiter20 : private valuetype [mscorlib]System.Runtime.CompilerServices.TaskAwaiter
+   |   |   |   |___[FLD] <canceled>5__1d : public bool
+   |   |   |   |___[FLD] <exc>5__1e : public class [mscorlib]System.Exception
+   |   |   |   |___[FLD] filename : public string
+   |   |   |   |___[MET] MoveNext : void()
+   |   |   |   |___[MET] SetStateMachine : void(class [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine)
+   |   |   |
+   |   |   |___[VCL] <OpenProject>d__23
+   |   |   |   |     .class value nested private auto ansi sealed beforefieldinit 
+   |   |   |   |      extends [mscorlib]System.ValueType 
+   |   |   |   |      implements [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine 
+   |   |   |   |     .custom instance void [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() = ( 01 00 00 00 )  ...
+   |   |   |   |___[FLD] <>1__state : public int32
+   |   |   |   |___[FLD] <>4__this : public class Microsoft.Research.Hyperlapse.WindowOperationsViewModel
+   |   |   |   |___[FLD] <>g__initLocal22 : public class [mscorlib]System.Collections.Generic.Dictionary`2<string,object>
+   |   |   |   |___[FLD] <>t__builder : public valuetype [mscorlib]System.Runtime.CompilerServices.AsyncTaskMethodBuilder
+   |   |   |   |___[FLD] <>t__stack : private object
+   |   |   |   |___[FLD] <>u__$awaiter26 : private valuetype [mscorlib]System.Runtime.CompilerServices.TaskAwaiter`1<bool>
+   |   |   |   |___[FLD] <>u__$awaiter27 : private valuetype [mscorlib]System.Runtime.CompilerServices.TaskAwaiter
+   |   |   |   |___[FLD] <canceled>5__24 : public bool
+   |   |   |   |___[FLD] <exc>5__25 : public class [mscorlib]System.Exception
+   |   |   |   |___[FLD] filename : public string
+   |   |   |   |___[MET] MoveNext : void()
+   |   |   |   |___[MET] SetStateMachine : void(class [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine)
+   |   |   |
+   |   |   |___[VCL] <SaveProject>d__2b
+   |   |   |   |     .class value nested private auto ansi sealed beforefieldinit 
+   |   |   |   |      extends [mscorlib]System.ValueType 
+   |   |   |   |      implements [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine 
+   |   |   |   |     .custom instance void [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() = ( 01 00 00 00 )  ...
+   |   |   |   |___[FLD] <>1__state : public int32
+   |   |   |   |___[FLD] <>4__this : public class Microsoft.Research.Hyperlapse.WindowOperationsViewModel
+   |   |   |   |___[FLD] <>g__initLocal29 : public class [mscorlib]System.Collections.Generic.Dictionary`2<string,object>
+   |   |   |   |___[FLD] <>g__initLocal2a : public class [mscorlib]System.Collections.Generic.Dictionary`2<string,object>
+   |   |   |   |___[FLD] <>t__builder : public valuetype [mscorlib]System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<bool>
+   |   |   |   |___[FLD] <>t__stack : private object
+   |   |   |   |___[FLD] <>u__$awaiter2d : private valuetype [mscorlib]System.Runtime.CompilerServices.TaskAwaiter
+   |   |   |   |___[FLD] <exc>5__2c : public class [mscorlib]System.Exception
+   |   |   |   |___[FLD] saveAs : public bool
+   |   |   |   |___[MET] MoveNext : void()
+   |   |   |   |___[MET] SetStateMachine : void(class [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine)
+   |   |   |
+   |   |   |___[VCL] <ShowOptions>d__14
+   |   |   |   |     .class value nested private auto ansi sealed beforefieldinit 
+   |   |   |   |      extends [mscorlib]System.ValueType 
+   |   |   |   |      implements [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine 
+   |   |   |   |     .custom instance void [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() = ( 01 00 00 00 )  ...
+   |   |   |   |___[FLD] <>1__state : public int32
+   |   |   |   |___[FLD] <>4__this : public class Microsoft.Research.Hyperlapse.WindowOperationsViewModel
+   |   |   |   |___[FLD] <>t__builder : public valuetype [mscorlib]System.Runtime.CompilerServices.AsyncTaskMethodBuilder
+   |   |   |   |___[FLD] <>t__stack : private object
+   |   |   |   |___[FLD] <>u__$awaiter15 : private valuetype [mscorlib]System.Runtime.CompilerServices.TaskAwaiter`1<bool>
+   |   |   |   |___[MET] MoveNext : void()
+   |   |   |   |___[MET] SetStateMachine : void(class [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine)
+   |   |   |
+   |   |   |___[FLD] <ActivateProductCommand>k__BackingField : private class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command
+   |   |   |___[FLD] <HandleFileCommand>k__BackingField : private class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.AsyncCommand`1<string>
+   |   |   |___[FLD] <NewProjectCommand>k__BackingField : private class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.AsyncCommand`1<string>
+   |   |   |___[FLD] <OpenProjectCommand>k__BackingField : private class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.AsyncCommand`1<string>
+   |   |   |___[FLD] <SaveProjectAsCommand>k__BackingField : private class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.AsyncCommand
+   |   |   |___[FLD] <SaveProjectCommand>k__BackingField : private class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.AsyncCommand
+   |   |   |___[FLD] <ShowHelpCommand>k__BackingField : private class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command
+   |   |   |___[FLD] <ShowOptionsCommand>k__BackingField : private class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.AsyncCommand
+   |   |   |___[FLD] activationManager : private class Microsoft.Research.Hyperlapse.ActivationManager
+   |   |   |___[FLD] currentProject : private class Microsoft.Research.Hyperlapse.Project
+   |   |   |___[FLD] operationsDisabled : private bool
+   |   |   |___[FLD] productInfo : private class Microsoft.Research.Hyperlapse.ProductInfo
+   |   |   |___[FLD] projectManager : private class Microsoft.Research.Hyperlapse.ProjectManager
+   |   |   |___[FLD] supportedVideoTypes : private initonly string[]
+   |   |   |___[MET] .ctor : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.INavigation,class Microsoft.Research.Hyperlapse.IHyperlapseUserInterface,class Microsoft.Research.Hyperlapse.ProjectManager,class Microsoft.Research.Hyperlapse.ActivationManager,class Microsoft.Research.Hyperlapse.ProductInfo)
+   |   |   |     <.ctor>b__0 : bool()
+   |   |   |     <.ctor>b__1 : bool(string)
+   |   |   |     <.ctor>b__2 : bool(string)
+   |   |   |     <.ctor>b__3 : class [mscorlib]System.Threading.Tasks.Task()
+   |   |   |     <.ctor>b__4 : bool()
+   |   |   |     <.ctor>b__5 : class [mscorlib]System.Threading.Tasks.Task()
+   |   |   |     <.ctor>b__6 : bool()
+   |   |   |     <.ctor>b__7 : class [mscorlib]System.Threading.Tasks.Task(string)
+   |   |   |     <.ctor>b__8 : bool(string)
+   |   |   |     <.ctor>b__9 : bool()
+   |   |   |___[MET] CanHandleFile : bool(string)
+   |   |   |     CheckForUnsavedChanges : class [mscorlib]System.Threading.Tasks.Task`1<bool>()
+   |   |   |     CloseProject : class [mscorlib]System.Threading.Tasks.Task`1<bool>()
+   |   |   |     CloseProject : class [mscorlib]System.Threading.Tasks.Task`1<bool>(bool)
+   |   |   |___[MET] HandleFile : class [mscorlib]System.Threading.Tasks.Task(string)
+   |   |   |___[MET] NewProject : class [mscorlib]System.Threading.Tasks.Task(string)
+   |   |   |___[MET] OpenProject : class [mscorlib]System.Threading.Tasks.Task(string)
+   |   |   |     SaveProject : class [mscorlib]System.Threading.Tasks.Task`1<bool>(bool)
+   |   |   |___[MET] ShowHelp : void()
+   |   |   |___[MET] ShowOptions : class [mscorlib]System.Threading.Tasks.Task()
+   |   |   |___[MET] ShowUpgrade : void()
+   |   |   |___[MET] currentProject_ValueChanged : void(object,class [mscorlib]System.EventArgs)
+   |   |   |___[MET] get_ActivateProductCommand : class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command()
+   |   |   |___[MET] get_CurrentProject : class Microsoft.Research.Hyperlapse.Project()
+   |   |   |     get_HandleFileCommand : class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.AsyncCommand`1<string>()
+   |   |   |___[MET] get_IsInTrialMode : bool()
+   |   |   |     get_NewProjectCommand : class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.AsyncCommand`1<string>()
+   |   |   |     get_OpenProjectCommand : class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.AsyncCommand`1<string>()
+   |   |   |___[MET] get_OperationsDisabled : bool()
+   |   |   |___[MET] get_SaveProjectAsCommand : class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.AsyncCommand()
+   |   |   |___[MET] get_SaveProjectCommand : class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.AsyncCommand()
+   |   |   |___[MET] get_ShowHelpCommand : class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command()
+   |   |   |___[MET] get_ShowOptionsCommand : class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.AsyncCommand()
+   |   |   |___[MET] get_UserInterface : class Microsoft.Research.Hyperlapse.IHyperlapseUserInterface()
+   |   |   |___[MET] get_WindowTitle : string()
+   |   |   |___[MET] set_ActivateProductCommand : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command)
+   |   |   |___[MET] set_CurrentProject : void(class Microsoft.Research.Hyperlapse.Project)
+   |   |   |     set_HandleFileCommand : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.AsyncCommand`1<string>)
+   |   |   |     set_NewProjectCommand : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.AsyncCommand`1<string>)
+   |   |   |     set_OpenProjectCommand : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.AsyncCommand`1<string>)
+   |   |   |___[MET] set_OperationsDisabled : void(bool)
+   |   |   |___[MET] set_SaveProjectAsCommand : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.AsyncCommand)
+   |   |   |___[MET] set_SaveProjectCommand : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.AsyncCommand)
+   |   |   |___[MET] set_ShowHelpCommand : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command)
+   |   |   |___[MET] set_ShowOptionsCommand : void(class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.AsyncCommand)
+   |   |   |___[PTY] ActivateProductCommand : instance class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command()
+   |   |   |___[PTY] CurrentProject : instance class Microsoft.Research.Hyperlapse.Project()
+   |   |   |___[PTY] HandleFileCommand : instance class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.AsyncCommand`1<string>()
+   |   |   |___[PTY] IsInTrialMode : instance bool()
+   |   |   |___[PTY] NewProjectCommand : instance class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.AsyncCommand`1<string>()
+   |   |   |___[PTY] OpenProjectCommand : instance class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.AsyncCommand`1<string>()
+   |   |   |___[PTY] OperationsDisabled : instance bool()
+   |   |   |___[PTY] SaveProjectAsCommand : instance class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.AsyncCommand()
+   |   |   |___[PTY] SaveProjectCommand : instance class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.AsyncCommand()
+   |   |   |___[PTY] ShowHelpCommand : instance class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.Command()
+   |   |   |___[PTY] ShowOptionsCommand : instance class [Microsoft.Research.VisionTools.Toolkit]Microsoft.Research.VisionTools.Toolkit.AsyncCommand()
+   |   |   |___[PTY] UserInterface : instance class Microsoft.Research.Hyperlapse.IHyperlapseUserInterface()
+   |   |   |___[PTY] WindowTitle : instance string()
+   |   |
+   |
+   |___[CLS] <PrivateImplementationDetails>{7DB13E37-734D-4DAB-9177-281326239BF8}
+   |   |     .class private auto ansi 
+   |   |     .custom instance void [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() = ( 01 00 00 00 )  ...
+   |   |___[VCL] __StaticArrayInitTypeSize=60
+   |   |   |     .class value nested private explicit ansi sealed 
+   |   |   |      extends [mscorlib]System.ValueType 
+   |   |
+   |   |___[VCL] __StaticArrayInitTypeSize=624
+   |   |   |     .class value nested private explicit ansi sealed 
+   |   |   |      extends [mscorlib]System.ValueType 
+   |   |
+   |   |___[STF] $$method0x60000bf-1 : static assembly valuetype '<PrivateImplementationDetails>{7DB13E37-734D-4DAB-9177-281326239BF8}'/'__StaticArrayInitTypeSize=60' at I_00005A70
+   |   |___[STF] $$method0x60001d3-1 : static assembly valuetype '<PrivateImplementationDetails>{7DB13E37-734D-4DAB-9177-281326239BF8}'/'__StaticArrayInitTypeSize=624' at I_000092C0
+   |
+

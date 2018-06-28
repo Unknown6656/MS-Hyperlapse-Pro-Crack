@@ -1,0 +1,32 @@
+#human readable description
+description GoPro HERO+ LCD
+cameraid 15
+
+#polynomial coefficients for the DIRECT mapping function (ocam_model.ss in MATLAB). These are used by cam2world
+
+poly_coeff_direct -8.415308e+02 0.000000e+00 3.191775e-04 1.340746e-08 -3.294072e-11 
+
+#polynomial coefficients for the inverse mapping function (ocam_model.invpol in MATLAB). These are used by world2cam
+
+poly_coeff_inverse 1852.264149 2636.103629 3021.697854 3348.186248 2537.107224 1244.323747 352.219596 43.557707 
+
+#center: "row" and "column", starting from 0 (C convention)
+
+center 529.766646 947.986168
+
+#affine parameters "c", "d", "e"
+
+affine_params 0.999507 -0.000133 -0.000032
+
+#image size: "height" and "width"
+
+image_size 1080 1920
+
+# average pixel reprojection error
+
+error 0.451605
+
+res 1920 1080 1.0000484072 0.9999519766 -0.0238892488 0.0304960506 Wide
+res 1280 720 1.4995365803 1.4994040720 0.0779178373 0.0872308363 Wide
+res 1280 720 1.5002164309 1.9527961926 2.2550582313 -161.3672293748 Superview 0.0000000000 0.0000000000 -0.1855775774 0.0522832982 0.0090274802 0.0150000000 -0.0001226058 0.0164781927 -0.1802925500 0.0504595691 -0.0140538749 0.0750884382
+

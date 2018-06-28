@@ -1,0 +1,29 @@
+#human readable description
+description Apple iPhone 6/6+
+cameraid 13
+
+#polynomial coefficients for the DIRECT mapping function (ocam_model.ss in MATLAB). These are used by cam2world
+
+poly_coeff_direct -2.045497e+03 0.000000e+00 9.035259e-05 -3.564275e-08 -2.609018e-11  
+
+#polynomial coefficients for the inverse mapping function (ocam_model.invpol in MATLAB). These are used by world2cam
+
+poly_coeff_inverse 117819.747285 553874.828215 1153339.305020 1351536.359639 956373.048355 407808.789776 96884.895908 9883.032536 
+
+#center: "row" and "column", starting from 0 (C convention)
+
+center 419.842639 986.429261
+
+#affine parameters "c", "d", "e"
+
+affine_params 0.999585 -0.000216 0.000291
+
+#image size: "height" and "width"
+
+image_size 1080 1920
+
+# average reprojection error
+
+error 1.359143
+
+res 1920 1080 1 1 0 0 Default

@@ -1,0 +1,40 @@
+#human readable description
+description Sony HDR AS200V
+cameraid 22
+barefile SonyHDR_AS200V_bare_extended.txt
+
+#polynomial coefficients for the DIRECT mapping function (ocam_model.ss in MATLAB). These are used by cam2world
+
+poly_coeff_direct -9.282753e+02 0.000000e+00 4.087213e-04 -7.987849e-08 1.927970e-10 
+
+#polynomial coefficients for the inverse mapping function (ocam_model.invpol in MATLAB). These are used by world2cam
+
+poly_coeff_inverse 1240.627189 625.341631 229.376015 1102.123488 2244.314160 3213.234656 2887.370294 1512.476001 422.834288 48.859977 
+
+#center: "row" and "column", starting from 0 (C convention)
+
+center 557.810573 946.826967
+
+#affine parameters "c", "d", "e"
+
+affine_params 1.000426 -0.000106 -0.000196
+
+#image size: "height" and "width"
+
+iamge_size 1080 1920
+
+# average pixel reprojection error
+
+error 0.657524
+ 
+# -------------------------
+#
+# Supported resolutions 
+#
+# Each line specifies one supported resolution. The format is width, height, scale-x, scale-y, bias-x, bias-y
+
+res 1920 1080         0.9999985307         0.9999453915         0.0037999895         0.0244308411 PS
+res 1920 1080         0.9999528413         0.9999420051         0.0102674394         0.0400980598 HQ
+res 1280 720         1.4997311894         1.4997151642         0.0475763003         0.3323273313 STD
+res 800 480         2.1811281388         2.1913832758        86.2600358205        17.7152932674 HS240
+res 1280 720         1.4554147525         1.4587529082        27.9502705529        14.7797527504 HS120

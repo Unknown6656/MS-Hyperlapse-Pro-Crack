@@ -1,0 +1,1 @@
+ildasm /out=decomp.il /bytes /tokens /source /linenum /quoteallnames /all /typelist "../input/Microsoft.Research.Hyperlapse.dll"
