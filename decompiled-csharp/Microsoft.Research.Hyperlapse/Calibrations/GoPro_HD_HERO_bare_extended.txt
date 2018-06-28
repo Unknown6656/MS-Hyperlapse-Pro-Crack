@@ -1,0 +1,39 @@
+#human readable description
+description GoPro HD HERO no housing
+cameraid 1
+child true
+
+#polynomial coefficients for the DIRECT mapping function (ocam_model.ss in MATLAB). These are used by cam2world
+
+poly_coeff_direct -5.659695e+02 0.000000e+00 5.905344e-04 -7.256396e-09 1.133612e-10 
+
+#polynomial coefficients for the inverse mapping function (ocam_model.invpol in MATLAB). These are used by world2cam
+
+poly_coeff_inverse 913.193326 647.975567 113.490049 80.403401 29.220589 4.356171 
+
+#center: "row" and "column", starting from 0 (C convention)
+
+center 491.390666 637.768001
+
+#affine parameters "c", "d", "e"
+
+affine_params 1.000125 -0.000213 -0.000138
+
+#image size: "height" and "width"
+
+image_size 960 1280
+
+# average pixel reprojection error
+
+error 0.555670
+
+# -------------------------
+#
+# Supported resolutions 
+#
+# Each line specifies one supported resolution. The format is width, height, scale-x, scale-y, bias-x, bias-y
+
+res 1920 1080 0.4973838360 0.4965495212 165.8064069785 219.0697372410 Wide
+res 1280 960 1 1 0 0 Wide
+res 1280 720 1.0008828348 1.0019941072 -1.6639470405 117.4366377244 Wide
+res 848 480 1.5175266871 1.5060702112 -6.4060303961 102.2615335599 Wide

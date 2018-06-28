@@ -1,0 +1,41 @@
+#human readable description
+description Garmin VIRB X
+cameraid 25
+
+#polynomial coefficients for the DIRECT mapping function (ocam_model.ss in MATLAB). These are used by cam2world
+
+poly_coeff_direct -8.493797e+02 0.000000e+00 3.846409e-04 -4.245576e-07 4.318946e-10 
+
+#polynomial coefficients for the inverse mapping function (ocam_model.invpol in MATLAB). These are used by world2cam
+
+poly_coeff_inverse  1303.461249 1256.661418 5186.253318 21928.151317 55932.815958 93754.785878 103073.865981 73038.095929 32082.831433 7952.641480 851.427517 
+
+#center: "row" and "column", starting from 0 (C convention)
+
+center 546.791004 918.532644
+
+#affine parameters "c", "d", "e"
+
+affine_params 1.000462 0.000138 0.000406
+
+#image size: "height" and "width"
+
+image_size 1080 1920
+
+# average pixel reprojection error
+
+error 0.549174
+ 
+# -------------------------
+#
+# Supported resolutions 
+#
+# Each line specifies one supported resolution. The format is width, height, scale-x, scale-y, bias-x, bias-y
+
+res 1920 1080         1.0000279868         1.0000099830        -0.0399966301        -0.0172969690 Wide
+res 1920 1080         0.7497593419         0.7448425366       239.8486009282       135.4155333905 Zoom
+res 1920 1080         0.5000571434         0.5002144321       479.6717054803       271.2211191552 Ultrazoom
+res 1280 960         1.5001971621         1.5002577396        -0.0984830952      -180.1439635159 Wide
+res 1280 720         1.5001057804         1.5002834605        -0.1481215176        -0.1049890107 Wide
+res 1280 720         1.1247858382         1.1253593868       239.8793657709       134.5181346298 Zoom
+res 1280 720         0.7499645086         0.7499314401       464.0122637695       262.5469975015 Ultrazoom

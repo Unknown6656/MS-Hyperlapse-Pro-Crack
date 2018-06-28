@@ -1,0 +1,42 @@
+#human readable description
+description Sony HDR AS100VR case off stab off
+cameraid 11
+child true
+
+#polynomial coefficients for the DIRECT mapping function (ocam_model.ss in MATLAB). These are used by cam2world
+
+poly_coeff_direct -8.899268e+02 0.000000e+00 4.683560e-04 -1.060053e-07 1.689373e-10 
+
+#polynomial coefficients for the inverse mapping function (ocam_model.invpol in MATLAB). These are used by world2cam
+
+poly_coeff_inverse 1224.778078 625.479222 -92.004318 -130.603544 -385.863296 -385.996290 -166.802783 -27.209718 
+
+#center: "row" and "column", starting from 0 (C convention)
+
+center 528.310385 901.174256
+
+#affine parameters "c", "d", "e"
+
+affine_params 1.000368 -0.000004 0.000083
+
+#image size: "height" and "width"
+
+image_size 1080 1920
+
+# average pixel reprojection error
+
+error 0.427801
+
+# -------------------------
+#
+# Supported resolutions 
+#
+# Each line specifies one supported resolution. The format is width, height, scale-x, scale-y, bias-x, bias-y
+
+res 1920 1080 1 1 0 0 PS
+res 1920 1080 1.0000498304 1.0000215058 -0.0299741297 0.0152442538 HQ
+res 1280 720 1.1783782593 1.1783281381 206.2411142819 115.5731972983 HS120
+res 800 480 1.9983778659 2.0000461736 158.7576614377 57.6199163913 HS240
+res 1280 720 1.1781025499 1.1782154578 206.3731483682 115.5054970062 SSLOW
+res 1280 720 1.4999724976 1.5000657486 0.2210046077 0.2084591639 STD
+res 640 480 2.2498449543 2.2499443084 240.5275686784 0.6037211767 VGA

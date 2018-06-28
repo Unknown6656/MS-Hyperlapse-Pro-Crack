@@ -1,0 +1,48 @@
+#human readable description
+description Garmin VIRB
+cameraid 24
+
+#polynomial coefficients for the DIRECT mapping function (ocam_model.ss in MATLAB). These are used by cam2world
+
+poly_coeff_direct  -9.586039e+02 0.000000e+00 4.384227e-04 -1.523135e-07 2.041298e-10 
+
+#polynomial coefficients for the inverse mapping function (ocam_model.invpol in MATLAB). These are used by world2cam
+
+poly_coeff_inverse  1278.134132 520.306894 -488.637070 -1060.231255 -1821.091004 -1629.547385 -752.557506 -165.083077 -12.184901 
+
+#center: "row" and "column", starting from 0 (C convention)
+
+center 530.557562 937.038245
+
+#affine parameters "c", "d", "e"
+
+affine_params 0.999717 -0.000109 -0.000053
+
+#image size: "height" and "width"
+
+image_Size 1080 1920
+
+# average pixel reprojection error
+
+error 0.415439
+ 
+# -------------------------
+#
+# Supported resolutions 
+#
+# Each line specifies one supported resolution. The format is width, height, scale-x, scale-y, bias-x, bias-y
+
+res 1920 1080         1.0000132201         1.0000573016        -0.0210760154        -0.0337361862 Wide
+res 1920 1080         0.9088807804         0.9090848267        87.4122615209        49.0170774968 Zoom1
+res 1920 1080         0.8331716708         0.8330309831       159.9588723464        90.1112611164 Zoom2
+# res 1920 1080         0.9413044379         0.9422080925        58.6393078128        29.6818582440 Ultrazoom
+res 1280 960         1.4996907000         1.5000402859         0.3880674927      -179.9189589058 Wide
+# res 1280 960         1.3897240883         1.3992717518        72.7144699055      -133.1031492871 Ultrazoom
+res 1280 720         1.4994446018         1.4998545660         0.4606474908         0.2149613847 Fast-Wide
+# res 1280 720         1.3693475064         1.3943185704        89.1212985715        36.1208261218 Fast-Ultrazoom
+res 1280 720         1.4999523064         1.4994789693         0.2027394977         0.4917075250 Econ-Wide
+# res 1280 720         1.3933986364         1.4072106222        71.4845487397        32.2736910207 Econ-Ultrazoom
+res 1280 720         1.4997143612         1.4997141463         0.3171203523         0.3111986177 SloMo-Wide
+# res 1280 720         1.4085266170         1.4113890798        61.4957201803        30.5375326472 SloMo-Ultrazoom
+
+

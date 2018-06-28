@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{04B37C43-61F2-4FA7-B620-0ABCA2456498}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Microsoft.Research.Hyperlapse</RootNamespace>
+    <AssemblyName>Microsoft.Research.Hyperlapse</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Research.VisionTools.Toolkit" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-PrivateImplementationDetails-{7DB13E37-734D-4DAB-9177-281326239BF8}.cs" />
+    <Compile Include="AboutViewModel.cs" />
+    <Compile Include="AccelerationOptions.cs" />
+    <Compile Include="ActivationManager.cs" />
+    <Compile Include="Calibration.cs" />
+    <Compile Include="CalibrationInfo.cs" />
+    <Compile Include="CalibrationMatcher.cs" />
+    <Compile Include="CalibrationProvider.cs" />
+    <Compile Include="FileCalibration.cs" />
+    <Compile Include="FinishViewModel.cs" />
+    <Compile Include="FirstRunExperience.cs" />
+    <Compile Include="FrameRateComparer.cs" />
+    <Compile Include="HyperlapseDialogResult.cs" />
+    <Compile Include="HyperlapseEngine.cs" />
+    <Compile Include="HyperlapseParameters.cs" />
+    <Compile Include="HyperlapseTelemetryClient.cs" />
+    <Compile Include="IAdvertisingModel.cs" />
+    <Compile Include="IFreeSpaceProvider.cs" />
+    <Compile Include="IHyperlapseUserInterface.cs" />
+    <Compile Include="ImportViewModel.cs" />
+    <Compile Include="INativeHyperlapseEngine.cs" />
+    <Compile Include="ITempPathProvider.cs" />
+    <Compile Include="IVideoReader.cs" />
+    <Compile Include="IVideoTestWriter.cs" />
+    <Compile Include="MainWindowViewModel.cs" />
+    <Compile Include="NavigationViewModel.cs" />
+    <Compile Include="OptionsViewModel.cs" />
+    <Compile Include="ProcessingFailedEventArgs.cs" />
+    <Compile Include="ProcessingFinishedEventArgs.cs" />
+    <Compile Include="ProcessingTimeEstimator.cs" />
+    <Compile Include="ProcessViewModel.cs" />
+    <Compile Include="ProductInfo.cs" />
+    <Compile Include="Project.cs" />
+    <Compile Include="ProjectInfo.cs" />
+    <Compile Include="ProjectManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecentProjectViewModel.cs" />
+    <Compile Include="ResourceCalibration.cs" />
+    <Compile Include="ScratchManager.cs" />
+    <Compile Include="SettingsViewModel.cs" />
+    <Compile Include="Size.cs" />
+    <Compile Include="SourceFileViewModel.cs" />
+    <Compile Include="StartPageViewModel.cs" />
+    <Compile Include="UnknownCalibration.cs" />
+    <Compile Include="UpdateChecker.cs" />
+    <Compile Include="UpgradeViewModel.cs" />
+    <Compile Include="VideoBitrateEstimator.cs" />
+    <Compile Include="VideoFormatTester.cs" />
+    <Compile Include="VideoInfo.cs" />
+    <Compile Include="VideoReaderException.cs" />
+    <Compile Include="WindowOperationsViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Calibrations\GarminVIRB_XE_StabOFF_LensCorrOFF_extended.txt" />
+    <EmbeddedResource Include="Calibrations\GarrminVIRB_CsON_StbOFF_extended.txt" />
+    <EmbeddedResource Include="Calibrations\GarrminVIRB_X_LensCorrOFF_extended.txt" />
+    <EmbeddedResource Include="Calibrations\GoPro_HD_HERO2_bare_extended.txt" />
+    <EmbeddedResource Include="Calibrations\GoPro_HD_HERO2_housing_extended.txt" />
+    <EmbeddedResource Include="Calibrations\GoPro_HD_HERO_bare_extended.txt" />
+    <EmbeddedResource Include="Calibrations\GoPro_HD_HERO_housing_extended.txt" />
+    <EmbeddedResource Include="Calibrations\GoPro_HERO3+_black_extended.txt" />
+    <EmbeddedResource Include="Calibrations\GoPro_HERO3+_silver_extended.txt" />
+    <EmbeddedResource Include="Calibrations\gopro_hero3_black_extended.txt" />
+    <EmbeddedResource Include="Calibrations\GoPro_HERO3_silver_extended.txt" />
+    <EmbeddedResource Include="Calibrations\gopro_hero3_white_extended.txt" />
+    <EmbeddedResource Include="Calibrations\GoPro_HERO4_black_extended.txt" />
+    <EmbeddedResource Include="Calibrations\GoPro_HERO4_Session_extended.txt" />
+    <EmbeddedResource Include="Calibrations\gopro_hero4_silver_extended.txt" />
+    <EmbeddedResource Include="Calibrations\GoPro_HEROPLUS_LCD_extended.txt" />
+    <EmbeddedResource Include="Calibrations\gopro_hero_extended.txt" />
+    <EmbeddedResource Include="Calibrations\iPhone6_extended.txt" />
+    <EmbeddedResource Include="Calibrations\Polaroid_Cube_extended.txt" />
+    <EmbeddedResource Include="Calibrations\SonyHDR_AS200V_bare_extended.txt" />
+    <EmbeddedResource Include="Calibrations\SonyHDR_AS200V_housing_extended.txt" />
+    <EmbeddedResource Include="Calibrations\Sony_FDR_1000v_bare_extended.txt" />
+    <EmbeddedResource Include="Calibrations\Sony_FDR_1000v_housing_extended.txt" />
+    <EmbeddedResource Include="Calibrations\Sony_HDR_AS100VR_bare_extended.txt" />
+    <EmbeddedResource Include="Calibrations\Sony_HDR_AS100VR_housing_extended.txt" />
+    <EmbeddedResource Include="Calibrations\Sony_HDR_AZ1_extended.txt" />
+    <EmbeddedResource Include="Calibrations\XiaoYi_Yi_LDA-OFF_extended.txt" />
+    <EmbeddedResource Include="Calibrations\XiaoYi_Yi_LDA-ON_extended.txt" />
+    <EmbeddedResource Include="Calibrations\XioaYi_Yi_4K_LDA-OFF_extended.txt" />
+    <EmbeddedResource Include="Calibrations\XioaYi_Yi_4K_LDA-ON_extended.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

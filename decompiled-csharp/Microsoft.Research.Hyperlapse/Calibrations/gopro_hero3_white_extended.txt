@@ -1,0 +1,37 @@
+#note that this was originally called 'gopro_hero3_white_housing_kopf_extended.txt'
+#human readable description 
+description GoPro HERO3 White
+cameraid 3
+
+#polynomial coefficients for the DIRECT mapping function (ocam_model.ss in MATLAB). These are used by cam2world
+
+poly_coeff_direct -6.056844e+02 0.000000e+00 4.972176e-04 1.221640e-07 -4.170655e-11 
+
+#polynomial coefficients for the inverse mapping function (ocam_model.invpol in MATLAB). These are used by world2cam
+
+poly_coeff_inverse 1022.230986 826.872300 290.370233 188.415373 50.016391 -2.939716 -2.809271 
+
+#center: "row" and "column", starting from 0 (C convention)
+
+center 490.063853 651.877185
+
+#affine parameters "c", "d", "e"
+
+affine_params 1.000021 -0.000081 0.000422
+
+#image size: "height" and "width"
+
+image_size 960 1280
+
+# -------------------------
+#
+# Supported resolutions 
+#
+# Each line specifies one supported resolution. The format is width, height, scale-x, scale-y, bias-x, bias-y
+
+res 848 480 1.510946 1.490671 -1.161948 121.181113 Wide
+res 1280 720 0.999950 0.994648 0.073888 121.609701 Wide
+res 1280 960 1 1 0 0 Wide
+res 1920 1080 0.500089, 0.493130 160.210145 214.747019 Medium
+
+

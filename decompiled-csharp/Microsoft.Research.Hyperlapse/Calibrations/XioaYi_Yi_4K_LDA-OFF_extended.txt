@@ -1,0 +1,44 @@
+#human readable description
+description XiaoYi YI 4K Lens Adj. OFF
+cameraid 29
+
+#polynomial coefficients for the DIRECT mapping function (ocam_model.ss in MATLAB). These are used by cam2world
+
+poly_coeff_direct -1.099950e+03 0.000000e+00 2.055045e-04 1.662842e-08 5.238146e-12  
+
+#polynomial coefficients for the inverse mapping function (ocam_model.invpol in MATLAB). These are used by world2cam
+
+poly_coeff_inverse 2049.878855 1657.768064 345.075028 169.529985 131.345002 61.245283 9.707625 
+
+#center: "row" and "column", starting from 0 (C convention)
+
+center 973.531751 1284.496099
+
+#affine parameters "c", "d", "e"
+
+affine_params 0.999827 0.000129 0.000128
+
+#image size: "height" and "width"
+
+image_size 1920 2560
+
+# average pixel reprojection error
+
+error  0.482797
+
+# -------------------------
+#
+# Supported resolutions 
+#
+# Each line specifies one supported resolution. The format is width, height, scale-x, scale-y, bias-x, bias-y
+
+res 3840 2160         0.6400122398         0.6399338986        52.6370754849       269.0091835181 Standard
+res 3840 2160         0.6827196154         0.6399487377       -30.6666882275       268.9152778249 Ultra
+res 2560 1920         1.0000298468         0.9999683139        -0.0301182369         0.0303396423 Standard
+res 1920 1440         1.3333878874         1.3332690072         0.0167090609        -0.0289922418 Standard
+res 1920 1080         1.3655515279         1.2800599210       -29.0692180586       268.9953762765 Ultra
+res 1920 1080         1.2801216534         1.2798964701        52.4624193548       268.6948995526 Standard
+res 1280 960         2.0000151198         2.0001166261         1.9224543663         0.1164553431 Standard
+res 1280 720         2.0481183904         1.9203672325       -28.8220709175       268.8673366857 Ultra
+res 1280 720         1.9199935757         1.9199540148        50.4009686095       269.9551493906 Standard
+res 848 480         2.8981785561         2.8807983095        50.3919115903       269.7501352621 Standard

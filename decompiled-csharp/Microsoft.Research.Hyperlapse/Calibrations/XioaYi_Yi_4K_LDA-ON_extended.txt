@@ -1,0 +1,42 @@
+#human readable description
+description XiaoYi YI 4K Lens Adj. ON
+cameraid 30
+
+#polynomial coefficients for the DIRECT mapping function (ocam_model.ss in MATLAB). These are used by cam2world
+
+poly_coeff_direct -1.768364e+03 0.000000e+00 3.532447e-04 -2.015876e-07 9.914935e-11  
+
+#polynomial coefficients for the inverse mapping function (ocam_model.invpol in MATLAB). These are used by world2cam
+
+poly_coeff_inverse 1647.887478 -4055.485844 -19903.191431 -44423.344528 -60880.031821 -50666.570794 -24988.444754 -6717.076277 -758.141501 
+
+#center: "row" and "column", starting from 0 (C convention)
+
+center 524.849155 1095.843881
+
+#affine parameters "c", "d", "e"
+
+affine_params 0.999373 -0.001644 -0.001926
+
+#image size: "height" and "width"
+
+image_size 1920 2560
+
+# average pixel reprojection error
+
+error   11.662796
+
+# -------------------------
+#
+# Supported resolutions 
+#
+# Each line specifies one supported resolution. The format is width, height, scale-x, scale-y, bias-x, bias-y
+
+res 2560 1920         1.0000072724         0.9999818635        -0.0092677349         0.0151219013 Standard
+res 1920 1440         1.3341924631         1.3336456497        -0.6319557076        -0.2274266054 Standard
+res 1920 1080         1.3659854112         1.2805016211       -29.4142072733       268.9309821795 Ultra
+res 1920 1080         1.2805506637         1.2803490601        51.9407945534       268.6741403600 Standard
+res 1280 960         2.0000281928         2.0002229398         1.9727381702         0.1891864713 Standard
+res 1280 720         2.0475111883         1.9208850277       -28.4135050693       268.8540342750 Ultra
+res 1280 720         1.9201656921         1.9205894165        50.2784675135       269.8640184906 Standard
+res 848 480         2.8994338270         2.8810125041        49.9407800062       269.8024617906 Standard
